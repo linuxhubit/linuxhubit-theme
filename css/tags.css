@@ -1,0 +1,95 @@
+.uk-articles-category--nginx {
+    background-image: url(../images/icon_nginx.png);
+    padding: 0 0 0 20px;
+    color: #009830
+}
+
+.uk-articles-category--debian {
+    background-image: url(../images/icon_debian.png);
+    padding: 0 0 0 20px;
+    color: #d90150
+}
+
+.uk-articles-category--apache {
+    background-image: url(../images/icon_apache.png);
+    padding: 0 0 0 20px;
+    color: #84206f
+}
+
+.uk-articles-category--mysql {
+    background-image: url(../images/icon_mysql.png);
+    padding: 0 0 0 20px;
+    color: #00618b
+}
+
+.uk-articles-category--ubuntu {
+    background-image: url(../images/icon_ubuntu.png);
+    padding: 0 0 0 20px;
+    color: #ff6209
+}
+
+.uk-articles-category--nodejs {
+    background-image: url(../images/icon_nodejs.png);
+    padding: 0 0 0 20px;
+    color: #8cc84b
+}
+
+.uk-articles-category--mongodb {
+    background-image: url(../images/icon_mongodb.png);
+    padding: 0 0 0 20px;
+    color: #1e8f36
+}
+
+.uk-articles-category--chromeos {
+    background-image: url(../images/icon_chromeos.png);
+    padding: 0 0 0 20px;
+    color: #3582ea
+}
+
+.uk-articles-category--centos {
+    background-image: url(../images/icon_centos.png);
+    padding: 0 0 0 20px;
+    color: #232278
+}
+
+.uk-articles-category--fedora {
+    background-image: url(../images/icon_fedora.png);
+    padding: 0 0 0 20px;
+    color: #243f72
+}
+
+.uk-articles-category--letsencrypt {
+    background-image: url(../images/icon_letsencrypt.png);
+    padding: 0 0 0 20px;
+    color: #ffa403
+}
+
+.uk-articles-category--netcore {
+    background-image: url(../images/icon_netcore.png);
+    padding: 0 0 0 20px;
+    color: #6c429c
+}
+
+.uk-articles-category--vestacp {
+    background-image: url(../images/icon_vestacp.png);
+    padding: 0 0 0 20px;
+    color: #505050
+}
+
+.uk-articles-category--python {
+    background-image: url(../images/icon_python.png);
+    padding: 0 0 0 20px;
+    color: #336b99
+}
+
+.uk-articles-category--php {
+    background-image: url(../images/icon_php.png);
+    padding: 0 0 0 20px;
+    color: #4c6394
+}
+
+.uk-articles-category--nextcloud {
+    background-image: url(../images/icon_nextcloud.png);
+    padding: 0 0 0 20px;
+    color: #118acc
+}

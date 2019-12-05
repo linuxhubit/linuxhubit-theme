@@ -1,2 +1,2 @@
-# linux-hub-theme
-Official linux/hub PageKit theme
+# linxuhub.it Theme
+The PageKit theme of linuxhub.it

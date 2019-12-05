@@ -1,0 +1,21 @@
+<?php
+    $taglist = [
+        '#pausacaffé',
+        '#howto',
+        'centos',
+        'fedora',
+        'ubuntu',
+        'debian',
+        'nginx',
+        'apache',
+        'nextcloud',
+        'nodejs',
+        'mongodb',
+        'chromeos',
+        'letsencrypt',
+        'netcore',
+        'vestacp',
+        'python',
+        'php',
+    ]
+?>

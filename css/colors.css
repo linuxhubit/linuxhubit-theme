@@ -1,0 +1,130 @@
+html {
+    color: #151515
+}
+a, a:hover,.uk-navbar-nav>li.uk-active>a,.uk-navbar-nav>li:hover>a,ul.uk-article-summary-list li a:hover,.uk-portal--content-section--blocks-entry:hover p {
+    color: #fe1804;
+} 
+::selection {
+    background-color: #fff2ac;
+}
+article p {
+    color: #202124;
+}
+blockquote {
+    background-color: #f7fbff;
+    border-color: #9bc9ff;
+}
+blockquote p {
+    color: #092e5a;
+}
+.uk-article-title {
+    color: #3a3a3a;
+}
+pre {
+    background-color: #f8f8f8;
+    color: #333;
+}
+.uk-article-meta {
+    color: #7b7b7b;
+}
+.uk-navbar-nav>li>a {
+    color: #4f5e81;
+}
+ul.uk-navbar-nav>li:hover::after {
+    background-color: #fe1905;
+}
+form.uk-navbar-search input[type="search"] {
+    background-color: #f0f0f0;
+    border-color: transparent;
+}
+form.uk-navbar-search input[type="search"]::placeholder {
+    color: #939393;
+}
+.uk-notices--entry:first-child,.uk-notices--entry:first-child a {
+    background-color: #f7f0e7;
+    color: #ce7b2e;
+}
+ul.uk-navbar-top li a {
+    color: #4f5e81;
+}
+.uk-container.uk-articles article.uk-article {
+    border-color: #e8e8e8;
+}
+
+.uk-articles .uk-article:hover .uk-margin-large-top a {
+    color: #3a3a3a;
+}.uk-articles .uk-margin-large-top i {
+    color: #3a3a3a;
+}
+
+ul.uk-article-summary-list li a {
+    color: #999;
+}
+.uk-container.uk-articles article.uk-article .uk-margin {
+    color: #424242;
+}
+
+.uk-article-title a {
+    color: #000;
+}
+form.uk-navbar-search input[type="search"]:focus,form.uk-navbar-search input[type="search"]:active {
+    border-color: #e8e8e8;
+    background-color: transparent;
+}
+
+.uk-footer {
+    background-color: #f3f5f9;
+}
+
+.uk-sitemap li a {
+    color: #5f6368;
+}
+
+.uk-copyright, .uk-disclaimer p, .uk-sitemap li a {
+    color: #5f6368;
+}
+
+.uk-article-page .uk-articles-categories {
+    background: #f3f5f9;
+}
+
+
+table, thead th, table td {
+    border-color: #d8d8d8;
+}
+
+tr:hover {
+    background: #d8d8d838;
+}
+.uk-search-page button.uk-button.uk-button-primary {
+    background-color: transparent;
+    color: #000;
+}
+.uk-search-page .uk-panel-box {
+    background: #f0f0f0;
+}
+
+
+
+.uk-search-page span.uk-badge.uk-badge-info {
+    color: #000;
+}
+
+.uk-search-page article.uk-article:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.uk-search-page article.uk-article:hover {
+    background-color: #f0f0f0;
+}
+
+.uk-portal--content-section--list ul li {
+    border-color: #e4e4e6;
+}
+
+
+
+.uk-navbar-search-results {
+    background-color: #fff;
+    border-color: #e8e8e8;
+}
