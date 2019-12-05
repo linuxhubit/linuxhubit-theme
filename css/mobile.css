@@ -53,7 +53,16 @@
         margin: -95px 0 0 0;
         width: 156px;
     }
+    
     .uk-navbar-search-results {
         display: none;
+    }
+    
+    .uk-footer {
+        text-align: center;
+    }
+    
+    .uk-brand {
+        margin: 0 auto;
     }
 }
