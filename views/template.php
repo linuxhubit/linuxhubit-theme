@@ -39,7 +39,7 @@
                         $(document).ready(function() {
                             searchfield.bind('change keyup', function() {
                             var searchkeywords = searchfield.val().replace(/ /g,"+");
-                                searchresults.load('search?searchword='+searchkeywords+' .uk-search-page');                        
+                                searchresults.load('https://linuxhub.it/search?searchword='+searchkeywords+' .uk-search-page');                        
                             });
                         });       
                         $(document).mouseup(function(e) {
