@@ -1,2 +1,2 @@
 # linxuhub.it Theme
-The PageKit theme of linuxhub.it
+The Bis[ku]it theme for linuxhub.it
