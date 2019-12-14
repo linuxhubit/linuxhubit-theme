@@ -256,7 +256,7 @@
             						<a href="http://www.camera.it/parlam/leggi/01062l.htm" target="_blank">n. 62 del 7/03/2001.</a>
             					</p>
             					<br>
-            					<p><small>developed with</small> <a target="_blank" href="https://www.pagekit.com/">PageKit</a></p>
+            					<p><small>developed with</small> <a target="_blank" href="https://biskuit.org/">Bis[ku]it</a></p>
             				</div>
             			</div>
             		</div>
