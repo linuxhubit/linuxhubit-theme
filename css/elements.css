@@ -52,7 +52,7 @@ form.uk-navbar-search input[type="search"] {
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    margin-top: 7px;
+    margin-top: 6px;
     min-width: 320px;
     padding: 13px 10px 12px 2.6em;
     position: relative;
@@ -181,6 +181,8 @@ ul.uk-navbar-top li a {
     border-left: 1px solid #d2d2d2;
     padding: 60px 10px;
     min-height: 320px;
+    position: sticky;
+    top: 0;
 }
 ul.uk-article-summary-list li {
     display: block;
@@ -620,3 +622,24 @@ ul.uk-article-summary-list li a.H4::after {
     width: 1px;
     top: 4px;
 }
+
+.uk-container.uk-articles article.uk-article:first-child {
+  max-width: initial;
+}
+.uk-container.uk-articles article.uk-article:first-child .uk-article-title {
+  font-size: 29px;
+}
+.uk-container.uk-articles .uk-article:first-child .uk-margin {
+  font-size: 19px;
+}
+.uk-container.uk-articles .uk-article:first-child .uk-margin-large-top a {
+  color: initial;
+  font-size: 17px;
+}
+.uk-container.uk-articles .uk-article:first-child .uk-margin-large-top a i {
+  position: relative;
+  top: -1px;
+}
+
+
+
