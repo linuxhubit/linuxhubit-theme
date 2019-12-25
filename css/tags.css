@@ -93,3 +93,24 @@
     padding: 0 0 0 20px;
     color: #118acc
 }
+
+.uk-articles-category--github {
+    background-image: url(../images/icon_github.png);
+    padding: 0 0 0 20px;
+    color: #24292e
+}
+
+.uk-articles-category--archlinux,
+.uk-articles-category--arch.linux {
+    background-image: url(../images/icon_archlinux.png);
+    padding: 0 0 0 20px;
+    color: #1793d1
+}
+
+.uk-articles-category--natale {
+    background-image: url(../images/icon_christmas.png);
+    padding: 0 0 0 18px;
+    color: #ea6b77;
+}
+
+

@@ -17,7 +17,7 @@
         <div class="uk-articles-categories">
             <?php 
                 foreach($taglist as $t) {
-                    if (stripos(strtolower($post->title), $t) !== false) {
+		    if (stripos(strtolower($post->content), $t) !== false) {
                         print('<div class="uk-articles-category--'.$t.'">'.$t.'</div>');
                     }
                 }
@@ -34,14 +34,14 @@
     </div>
 
     <script async>
-      jQuery(document).ready(function() {
+      $(document).ready(function() {
         var e = ".uk-article-text",
             t = ".uk-article-summary-list",
-            a = jQuery(e + " h1," + e + " h2," + e + " h3," + e + " h4");
-        jQuery(t).empty(), a.each(function(e) {
-          var a = jQuery(this);
-          a.attr("id", "title" + e), jQuery(t).append("<li><a id='link" + e + "' href='#title" + e + "' title='" + a.attr("tagName") + "'>" + a.html() + "</a></li>")
-        }), jQuery(t + " li").length < 1 && jQuery(t).parent().remove()
+            a = $(e + " h1," + e + " h2," + e + " h3," + e + " h4");
+        $(t).empty(), a.each(function(e) {
+          var a = $(this);
+          a.attr("id", "title" + e), $(t).append("<li><a id='link" + e + "' href='#title" + e + "' class='" +a.prop('nodeName')+"' title='" + a.attr("tagName") + "'>" + a.html() + "</a></li>")
+        }), $(t + " li").length < 1 && $(t).parent().remove()
       });
     </script>
 </article>

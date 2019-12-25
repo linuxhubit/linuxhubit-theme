@@ -1,7 +1,5 @@
 <?php
     $taglist = [
-        '#pausacaffé',
-        '#howto',
         'centos',
         'fedora',
         'ubuntu',
@@ -14,8 +12,12 @@
         'chromeos',
         'letsencrypt',
         'netcore',
+	'natale',
         'vestacp',
         'python',
         'php',
+	'github',
+	'archlinux',
+	'arch linux',
     ]
 ?>

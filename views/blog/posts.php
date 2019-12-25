@@ -29,8 +29,8 @@
         <div class="uk-articles-categories">
             <?php 
                 foreach($taglist as $t) {
-                    if (stripos(strtolower($post->title), $t) !== false) {
-                        print('<div class="uk-articles-category--'.$t.'">'.$t.'</div>');
+		    if (stripos(strtolower($post->content), $t) !== false) {             
+           		print('<div class="uk-articles-category--'.$t.'">'.$t.'</div>');
                     }
                 }
             ?>
