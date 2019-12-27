@@ -37,7 +37,37 @@
     src: local('Poppins Bold'), local('Poppins-Bold'), url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype');
 }
 
-/* Roboto*/
+/* Heebo */
+@font-face {
+    font-family: 'Heebo';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Heebo Light'), local('Heebo-Light'), url(../fonts/Heebo/Heebo-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Heebo Regular'), local('Heebo-Regular'), url(../fonts/Heebo/Heebo-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Heebo Medium'), local('Heebo-Medium'), url(../fonts/Heebo/Heebo-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Heebo Bold'), local('Heebo-Bold'), url(../fonts/Heebo/Heebo-Bold.ttf) format('truetype');
+}
+
+/* Roboto
 @font-face {
     font-family: 'Roboto';
     font-display: swap;
@@ -65,4 +95,4 @@
     font-style: normal;
     font-weight: 700;
     src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
-}
+}*/
