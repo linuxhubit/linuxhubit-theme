@@ -128,7 +128,8 @@
     .uk-form input[type="url"],
     .uk-form input[type="search"],
     .uk-form input[type="tel"],
-    .uk-form input[type="color"]  {
+    .uk-form input[type="color"],
+    .tm-navbar::after   {
         background-color: #27272f;
     }
     

@@ -639,10 +639,16 @@ ul.uk-article-summary-list li a.H4::after {
   top: -1px;
 }
 
-
-
-
-
-
-
-
+@media (prefers-color-scheme: dark) {
+    .tm-navbar:not(.uk-active)::after {
+        content: "Beta dark mode";
+        position: fixed;
+        top: initial;
+        bottom: 0;
+        right: 0;
+        display: block;
+        padding: 7px 15px;
+        margin: 10px;
+        border-radius: 4px;
+    }
+}
