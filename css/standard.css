@@ -42,10 +42,9 @@ strong {
 :not(pre)>samp {
  font-size:12px;
  font-family:"Roboto Mono",Consolas,monospace,serif;
- color:#f0615c;
  white-space:nowrap;
  padding:1px 6px 3px 6px;
- border:1px solid #e5e5e5;
+ border:1px solid;
  border-radius:3px
 }
 em {
@@ -144,7 +143,6 @@ h5,
 h6 {
  margin:0 0 25px 0;
  font-weight:500;
- color:#3a3a3a;
  text-transform:none
 }
 *+h1,
@@ -1464,7 +1462,6 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  color:#fff
 }
 .uk-navbar {
- background:#fff;
  color:#adadad;
  margin-left:-15px;
  margin-right:-15px
@@ -7599,7 +7596,6 @@ html {
 }
 .tm-navbar {
  position:relative;
- background:#fff;
  box-shadow:0 3px 8px -4px rgba(0,0,0,0.15);
  z-index:1
 }
