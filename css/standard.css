@@ -1229,7 +1229,7 @@ iframe {
 }
 .uk-article+.uk-article {
  padding-top:80px;
- border-top:1px solid #e5e5e5
+ border-top:1px solid
 }
 @media (min-width:768px) {
  .uk-article+.uk-article {
@@ -2334,8 +2334,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
  height:42px;
  max-width:100%;
  padding:4px 6px;
- border:1px solid #e5e5e5;
- background:#fff;
+ border:1px solid;
  color:#888888;
  -webkit-transition:all linear .2s;
  transition:all linear .2s
@@ -2357,31 +2356,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-form input[type="search"]:focus,
 .uk-form input[type="tel"]:focus,
 .uk-form input[type="color"]:focus {
- border-color:#489be0;
  outline:0;
- background:#fff;
- color:#888888
-}
-.uk-form select:disabled,
-.uk-form textarea:disabled,
-.uk-form input:not([type]):disabled,
-.uk-form input[type="text"]:disabled,
-.uk-form input[type="password"]:disabled,
-.uk-form input[type="datetime"]:disabled,
-.uk-form input[type="datetime-local"]:disabled,
-.uk-form input[type="date"]:disabled,
-.uk-form input[type="month"]:disabled,
-.uk-form input[type="time"]:disabled,
-.uk-form input[type="week"]:disabled,
-.uk-form input[type="number"]:disabled,
-.uk-form input[type="email"]:disabled,
-.uk-form input[type="url"]:disabled,
-.uk-form input[type="search"]:disabled,
-.uk-form input[type="tel"]:disabled,
-.uk-form input[type="color"]:disabled {
- border-color:#e5e5e5;
- background-color:#fafafa;
- color:#adadad
 }
 .uk-form :-ms-input-placeholder {
  color:#adadad !important

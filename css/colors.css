@@ -1,8 +1,6 @@
 @media (prefers-color-scheme: dark) {
-    html {
-        color: #151515
-    }
-    body {
+    body,
+    .uk-form input:not([type="radio"]):not([type="checkbox"]).inputbox {
         background-color: #31313a;
     }
     a, 
@@ -11,7 +9,8 @@
     .uk-navbar-nav>li:hover>a,
     ul.uk-article-summary-list li a:hover,
     .uk-portal--content-section--blocks-entry:hover p,
-    form.uk-navbar-search input[type="search"] {
+    form.uk-navbar-search input[type="search"],
+    blockquote p  {
         color: #fff;
     } 
     ul.uk-navbar-nav>li:hover::after,
@@ -27,17 +26,35 @@
     article p, h1, h2, h3, h4, h5, h6, .uk-article-text li, code.hljs {
         color: #ecedf0;
     }
-    blockquote {
-        background-color: #f7fbff;
-        border-color: #9bc9ff;
+    blockquote,
+    .uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="datetime"],
+    .uk-form input[type="datetime-local"],
+    .uk-form input[type="date"],
+    .uk-form input[type="month"],
+    .uk-form input[type="time"],
+    .uk-form input[type="week"],
+    .uk-form input[type="number"],
+    .uk-form input[type="email"],
+    .uk-form input[type="url"],
+    .uk-form input[type="search"],
+    .uk-form input[type="tel"],
+    .uk-form input[type="color"] {
+        border-color: #27272f;
     }
-    blockquote p {
-        color: #092e5a;
+    .uk-form legend::after {
+        border-bottom-color: #605d5d;
+    }
+    .uk-article+.uk-article {
+        border-top-color: transparent;
     }
     pre {
         color: #e6e6e6;
         border-color: transparent;
-        background-color: #27272f;
     }
     .uk-article-meta {
         color: #e6e6e6;
@@ -74,7 +91,8 @@
     .uk-navbar-nav>li>a,
     ul.uk-navbar-top li a,
     ul.uk-article-summary-list li a,
-    .uk-container.uk-articles article.uk-article .uk-margin {
+    .uk-container.uk-articles article.uk-article .uk-margin,
+    html {
         color: #999;
     }
     
@@ -88,7 +106,29 @@
     .uk-navbar-search-results,
     .tm-navbar,
     .uk-navbar,
-    .uk-navbar-nav > li.uk-active  {
+    .uk-navbar-nav > li.uk-active,
+    blockquote,
+    pre,
+    .uk-article-page .uk-articles-categories,
+    .uk-search-page article.uk-article:hover, .uk-search-page .uk-panel-box,
+    .uk-search-page article.uk-article:nth-child(even),
+    .uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="datetime"],
+    .uk-form input[type="datetime-local"],
+    .uk-form input[type="date"],
+    .uk-form input[type="month"],
+    .uk-form input[type="time"],
+    .uk-form input[type="week"],
+    .uk-form input[type="number"],
+    .uk-form input[type="email"],
+    .uk-form input[type="url"],
+    .uk-form input[type="search"],
+    .uk-form input[type="tel"],
+    .uk-form input[type="color"]  {
         background-color: #27272f;
     }
     
@@ -101,10 +141,6 @@
         color: #5f6368;
     }
     
-    .uk-article-page .uk-articles-categories {
-        background: #27272f;
-    }
-    
     table, thead th, table td {
         border-color: #d8d8d8;
     }
@@ -114,15 +150,6 @@
     }
     .uk-search-page button.uk-button.uk-button-primary {
         background-color: transparent;
-    }
-    
-    .uk-search-page article.uk-article:nth-child(even) {
-        background-color: #f3f3f3;
-    }
-    
-    .uk-search-page article.uk-article:hover,
-    .uk-search-page .uk-panel-box {
-        background-color: #f0f0f0;
     }
     
     .uk-portal--content-section--list ul li {
@@ -250,7 +277,23 @@
     .uk-footer,
     .uk-container.uk-articles article.uk-article,
     .uk-navbar-search-results,
-    .tm-navbar  {
+    .tm-navbar,.uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="datetime"],
+    .uk-form input[type="datetime-local"],
+    .uk-form input[type="date"],
+    .uk-form input[type="month"],
+    .uk-form input[type="time"],
+    .uk-form input[type="week"],
+    .uk-form input[type="number"],
+    .uk-form input[type="email"],
+    .uk-form input[type="url"],
+    .uk-form input[type="search"],
+    .uk-form input[type="tel"],
+    .uk-form input[type="color"]  {
         background-color: #fff;
     }
     
@@ -266,7 +309,24 @@
         background: #efefef;
     }
     
-    table, thead th, table td {
+    table, thead th, table td,
+    .uk-form select,
+    .uk-form textarea,
+    .uk-form input:not([type]),
+    .uk-form input[type="text"],
+    .uk-form input[type="password"],
+    .uk-form input[type="datetime"],
+    .uk-form input[type="datetime-local"],
+    .uk-form input[type="date"],
+    .uk-form input[type="month"],
+    .uk-form input[type="time"],
+    .uk-form input[type="week"],
+    .uk-form input[type="number"],
+    .uk-form input[type="email"],
+    .uk-form input[type="url"],
+    .uk-form input[type="search"],
+    .uk-form input[type="tel"],
+    .uk-form input[type="color"] {
         border-color: #d8d8d8;
     }
     
@@ -311,5 +371,8 @@
     :not(pre)>samp {
         color:#f0615c;
         border-color: #e5e5e5;
+    }
+    .uk-article+.uk-article {
+        border-top-color: #e5e5e5
     }
 }
