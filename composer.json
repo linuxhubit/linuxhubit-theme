@@ -4,11 +4,11 @@
     "version": "1.0.1",
     "title": "v3",
     "description": "linuxhub's default theme.",
-    "license": "GPLv3",
+    "license": "MIT",
     "copyright": "(c) 2019 linuxhub",
     "authors": [
         {
-            "name": "Mirko B.",
+            "name": "Pagekit",
             "email": "amministrazione@linuxhub.it",
             "homepage": "https://linuxhub.it"
         }

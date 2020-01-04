@@ -1,2 +1,3 @@
-# linxuhub.it Theme
-The Bis[ku]it theme for linuxhub.it
+# One Theme
+
+Pagekit's default theme.

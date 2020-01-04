@@ -17,7 +17,6 @@
         'python',
         'php',
 	'github',
-	'archlinux',
 	'arch linux',
     ]
 ?>

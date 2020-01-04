@@ -7,7 +7,6 @@
         <meta name="description" content="Guide, informazioni e novitá su Linux e Open source.">
         <?= $view->render('head') ?>
         <?php $view->style('theme', 'theme:css/theme.css') ?>
-        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox',  'uikit-parallax']) ?>
     </head>
     <body>
 
@@ -288,6 +287,9 @@
         <?php endif ?>
 
         <?= $view->render('footer') ?>
+
+        <?php $view->script('theme', 'theme:js/theme.js', ['uikit-sticky',  'uikit-lightbox',  'uikit-parallax']) ?>
+
 
     </body>
 </html>

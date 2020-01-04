@@ -1,7 +1,7 @@
 /*!   | (c) 2014 Pagekit | MIT License */
-@import url('fonts.css');
-@import url('standard.css');
-@import url('elements.css');
-@import url('colors.css');
+@import url('fonts.min.css');
+@import url('standard.min.css');
+@import url('elements.min.css');
+@import url('colors.min.css');
 @import url('tags.css');
-@import url('mobile.css');
+@import url('mobile.min.css');
