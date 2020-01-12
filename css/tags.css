@@ -113,4 +113,8 @@
     color: #ea6b77;
 }
 
-
+.uk-articles-category--utilizzo.del.comando {
+    background-image: url(../images/icon_utilizzo_del_comando.png);
+    padding: 0 0 0 21px;
+    color: #191919;
+}

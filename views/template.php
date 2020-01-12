@@ -25,7 +25,7 @@
                         <?php endif ?>
                     </a>
 
-                    <form class="uk-navbar-search" method="GET" action="search" autocomplete="off">
+                    <form class="uk-navbar-search" method="GET" action="https://linuxhub.it/search" autocomplete="off">
                         <i class="uk-icon-search"></i>
                         <input type="search" autcomplete="off" name="searchword" placeholder="Cerca .." />
                         <input type="submit" hidden />
