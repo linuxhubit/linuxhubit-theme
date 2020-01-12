@@ -1,4 +1,24 @@
 /* light mode */
+html::-webkit-scrollbar-track {
+    border: 7px solid #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: #ececec;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #616161;
+}
+
+html::-webkit-scrollbar-thumb:window-inactive {
+   background-color: #949699;
+}
+
 html {
     color: #151515
 }
@@ -223,6 +243,23 @@ ul.uk-article-summary-list li a.H4::after {
 /* /light mode */
 
 @media (prefers-color-scheme: dark) {
+    html::-webkit-scrollbar-track {
+        border: 7px solid #31313a;
+        background-color: #31313a;
+    }
+    html::-webkit-scrollbar-track:hover {
+        background-color: #28282a;
+    }
+    html::-webkit-scrollbar-thumb {
+        background-color: #616161;
+    }
+    html::-webkit-scrollbar-thumb:window-inactive {
+       background-color: #949699;
+    }
+    html::-webkit-scrollbar-thumb:hover {
+        background-color: #fff;
+    }
+
     .hljs-string {
         color: #99c3f2 !important;
     }
@@ -240,6 +277,7 @@ ul.uk-article-summary-list li a.H4::after {
         color: #fca8ff !important;
     }
 
+    html,
     body,
     .uk-form input:not([type="radio"]):not([type="checkbox"]).inputbox {
         background-color: #31313a;

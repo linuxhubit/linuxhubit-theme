@@ -1,3 +1,24 @@
+html::-webkit-scrollbar {
+    height: 20px;
+    width: 20px;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 20px;
+    width: 6px;
+    box-sizing: content-box;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 7px solid transparent;
+    border-radius: 20px;
+    background-clip: content-box;
+    width: 6px; 
+    box-sizing: content-box;
+    min-height: 30px;
+}
+
 article p,
 .uk-article-text li {
     font-size: 17px;
