@@ -1,3 +1,2 @@
-# One Theme
-
-Pagekit's default theme.
+# linux/hub theme
+Official linuxhub.it theme for Biskuit CMS.

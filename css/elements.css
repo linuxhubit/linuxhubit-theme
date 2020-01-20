@@ -1,30 +1,30 @@
 html::-webkit-scrollbar {
     height: 20px;
     width: 20px;
-    background: transparent;
+    background: transparent
 }
 
 html::-webkit-scrollbar-track {
     border-radius: 20px;
     width: 6px;
-    box-sizing: content-box;
+    box-sizing: content-box
 }
 
 html::-webkit-scrollbar-thumb {
     border: 7px solid transparent;
     border-radius: 20px;
     background-clip: content-box;
-    width: 6px; 
+    width: 6px;
     box-sizing: content-box;
-    min-height: 30px;
+    min-height: 30px
 }
 
 article p,
 .uk-article-text li {
-    font-size: 17px;
+    font-size: 1.1em;
     font-weight: 400;
-    letter-spacing: .9px;
-    line-height: 31px
+    letter-spacing: .85px;
+    line-height: 1.9em
 }
 
 .uk-article-body p:hover {
@@ -57,14 +57,15 @@ pre {
 
 .uk-responsive-height {
     position: relative;
-    top: -4px;
-    max-height: 34px
+    top: -5px;
+    max-height: 28px
 }
 
 .uk-secondary-navbar {
     height: auto;
     text-align: center;
-    padding: 15px 20px
+    padding: 9px 20px;
+    box-shadow: 0 3px 8px -4px rgba(0, 0, 0, 0.15)
 }
 
 .uk-navbar-nav>li.uk-active {
@@ -77,11 +78,12 @@ form.uk-navbar-search input[type="search"] {
     border-radius: 5px;
     margin-top: 8px;
     min-width: 320px;
-    padding: 13px 10px 12px 2.6em;
+    padding: 9px 10px 9px 2.6em;
     position: relative;
     top: 2px;
     font-size: 16px;
     width: 100%;
+    max-width: 340px
 }
 
 form.uk-navbar-search {
@@ -125,14 +127,14 @@ form.uk-navbar-search i {
     font-size: 15px;
     position: absolute;
     z-index: 1;
-    top: 23px;
-    left: 12px;
+    top: 20px;
+    left: 12px
 }
 
 ul.uk-navbar-top {
     text-align: right;
     float: right;
-    margin: 19px 0 0
+    margin: 16px 0 0
 }
 
 ul.uk-navbar-top li {
@@ -143,22 +145,23 @@ ul.uk-navbar-top li {
 }
 
 .uk-articles article.uk-article {
-    border-width: 1px;
+    border-width: 0;
     border-style: solid;
     border-radius: 8px;
     display: block;
     position: relative;
-    max-width: 40%;
-    margin: 0 1.638% 17px 0;
+    max-width: 40.6%;
+    margin: 0 1.8% 17px 0;
     overflow: hidden;
     width: 100%;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.06);
-    padding: 80px 42px 100px
+    padding: 50px 42px 80px
 }
 
 .uk-container.uk-articles {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    padding: 0 10px
 }
 
 ul.uk-navbar-top li a {
@@ -191,8 +194,8 @@ ul.uk-navbar-top li a {
 }
 
 .uk-article-page .uk-article-title {
-    font-size: 2em;
-    margin: .67em 0 12px 0
+    font-size: 2.3em;
+    margin: .67em 0 12px
 }
 
 .uk-article-with-summary .uk-article-body,
@@ -217,7 +220,7 @@ ul.uk-navbar-top li a {
 
 ul.uk-article-summary-list li {
     display: block;
-    padding: 0 0 16px 0
+    padding: 0 0 16px
 }
 
 .uk-container.uk-articles article.uk-article .uk-margin {
@@ -269,32 +272,15 @@ form.uk-navbar-search input[type="search"]:active {
     padding: 5px 0 0
 }
 
-.uk-sitemap ul,
-.lhb-sitemap li {
-    display: block;
-    margin: 0;
-    padding: 0
-}
-
 .uk-sitemap li {
+    font-size: 14px;
     font-size: 14px
 }
 
 .uk-sitemap li a {
-    padding: 6px 0;
+    padding: 4px 0;
     display: inline-block;
     border-bottom: 0
-}
-
-.uk-sitemap li {
-    font-size: 14px
-}
-
-.uk-sitemap ul,
-.uk-sitemap li {
-    display: block;
-    margin: 0;
-    padding: 0
 }
 
 .uk-brand.lhb-brand--small {
@@ -322,7 +308,8 @@ form.uk-navbar-search input[type="search"]:active {
 }
 
 .uk-sitemap h3 {
-    margin: 0 0 10px
+    margin: 0 0 10px;
+    font-size: 1.3em
 }
 
 .uk-articles-categories div {
@@ -372,10 +359,6 @@ table td {
     height: 39px;
     box-shadow: none;
     transition: all .2s ease-out
-}
-
-.uk-search-page label[for="search_searchword"] {
-    display: none
 }
 
 .uk-search-page button.uk-button.uk-button-primary {
@@ -466,7 +449,7 @@ table td {
 }
 
 .uk-search-page article.uk-article {
-    padding: 20px 20px
+    padding: 20px
 }
 
 .uk-portal {
@@ -572,33 +555,21 @@ table td {
     opacity: .9
 }
 
-.uk-navbar-search-results .uk-panel-box {
-    display: none
-}
-
 .uk-navbar-search-results {
     position: absolute;
     max-height: 320px;
     overflow: auto;
     border: 1px solid;
-    max-width: 458px;
+    max-width: 338px;
     box-shadow: 0 3px 8px -4px rgba(0, 0, 0, 0.15);
     border-top: 0;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px
 }
 
-.uk-navbar-search-results .uk-float-right.uk-clearfix {
-    display: none
-}
-
 .uk-navbar-search-results .uk-margin-top {
     margin-top: 4px !important;
     padding: 0 15px
-}
-
-.uk-navbar-search-results p.counter {
-    display: none
 }
 
 .uk-navbar-search-results .uk-margin-bottom {
@@ -608,17 +579,13 @@ table td {
 .uk-navbar-search-results article.uk-article h1.tm-article-title.uk-article-title {
     line-height: 21px;
     font-size: 12px;
-    margin: 0 0 0 0 !important
+    margin: 0 !important
 }
 
 .uk-navbar-search-results .uk-article-content.uk-margin {
     margin: 7px 0 0;
     font-size: 12px;
     line-height: 17px
-}
-
-.uk-navbar-search-results ul.uk-article-meta.uk-subnav.uk-subnav-line {
-    display: none
 }
 
 .uk-navbar-search-results article.uk-article {
@@ -632,12 +599,14 @@ table td {
 }
 
 form.uk-navbar-search .uk-navbar-search-results i {
-    margin: -3px 0 0 0
+    margin: -3px 0 0
 }
 
 .uk-article-text img {
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
+    outline: 1px solid #ffffff0f;
+    outline-offset: -2px
 }
 
 ul.uk-article-summary-list li a.H3,
@@ -694,9 +663,26 @@ ul.uk-article-summary-list li a.H4::after {
     top: -1px
 }
 
+.uk-sitemap ul,
+.lhb-sitemap li,
+.uk-sitemap ul,
+.uk-sitemap li {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+.uk-search-page label[for="search_searchword"],
+.uk-navbar-search-results .uk-panel-box,
+.uk-navbar-search-results .uk-float-right.uk-clearfix,
+.uk-navbar-search-results p.counter,
+.uk-navbar-search-results ul.uk-article-meta.uk-subnav.uk-subnav-line {
+    display: none
+}
+
 @media(prefers-color-scheme:dark) {
     .tm-navbar:not(.uk-active)::after {
-        content: "Beta dark mode";
+        content: "Dark mode";
         position: fixed;
         top: initial;
         bottom: 0;
@@ -706,4 +692,120 @@ ul.uk-article-summary-list li a.H4::after {
         margin: 10px;
         border-radius: 4px
     }
+}
+
+div.uk-articles-reading-time {
+    font-size: 15px;
+    position: absolute;
+    bottom: 25px;
+    left: 8%;
+    display: block;
+    opacity: .2
+}
+
+div.uk-articles-reading-time:hover {
+    opacity: .8;
+    cursor: default
+}
+
+.uk-container.uk-articles article.uk-article:first-child div.uk-articles-reading-time {
+    left: 38px
+}
+
+.roles {
+    padding: 20px 10px;
+    text-align: center
+}
+
+.roles h3 {
+    font-size: 28px;
+    text-align: center
+}
+
+.roles>div {
+    max-width: 21%;
+    position: relative;
+    display: inline-table;
+    vertical-align: top;
+    background-color: #00000036;
+    padding: 20px 20px 0;
+    text-align: center
+}
+
+.roles>div img {
+    border-radius: 3px;
+    height: 149px;
+    margin: 0 auto;
+    display: block
+}
+
+.roles>div div {
+    display: block;
+    margin: 0 -20px;
+    background: #0000003d;
+    padding: 30px 20px
+}
+
+.roles>div:hover div {
+    top: 0
+}
+
+.roles>div div p {
+    font-size: 13px;
+    line-height: 21px
+}
+
+.roles>div span {
+    display: block;
+    font-weight: 500;
+    line-height: 22px
+}
+
+.roles>div ul,
+.roles>div li {
+    padding: 0;
+    margin: 0
+}
+
+.roles>div li a {
+    padding: 10px;
+    display: block;
+    font-size: 13px
+}
+
+.roles>div ul {
+    margin: 20px 0;
+    background: #0000003d;
+    display: block
+}
+
+.roles>div p b {
+    font-weight: 900
+}
+
+.roles>div p {
+    font-size: 14px;
+    margin: 12px 0
+}
+
+.roles>div li {
+    display: inline-table
+}
+
+.roles h3+p {
+    text-align: center
+}
+
+.uk-articles article.uk-article:nth-child(even) {
+    margin: 0 18px 17px 0
+}
+
+.uk-navbar-search-results i.uk-icon-arrow-right {
+    display: none
+}
+
+.uk-article-summary .uk-articles-reading-time {
+    position: initial;
+    opacity: .6;
+    padding-left: 30px
 }

@@ -18,6 +18,5 @@
         'php',
 	'github',
 	'arch linux',
-	'utilizzo del comando',
     ]
 ?>

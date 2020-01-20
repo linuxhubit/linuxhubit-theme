@@ -11,7 +11,7 @@
     <body>
 
         <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
-        <div class="<?= $params['classes.navbar'] ?>" <?= $params['classes.sticky'] ?>>
+        <div class="<?= $params['classes.navbar'] ?>"> <!--<?= $params['classes.sticky'] ?>-->
             <div class="uk-container uk-container-center">
 
                 <nav class="uk-navbar">
@@ -19,13 +19,12 @@
                     <a class="uk-navbar-brand" href="<?= $view->url()->get() ?>">
                         <?php if ($params['logo']) : ?>
                             <img class="tm-logo uk-responsive-height" src="<?= $this->escape($params['logo']) ?>" alt="">
-                            <img class="tm-logo-contrast uk-responsive-height" src="<?= ($params['logo_contrast']) ? $this->escape($params['logo_contrast']) : $this->escape($params['logo']) ?>" alt="">
                         <?php else : ?>
                             <?= $params['title'] ?>
                         <?php endif ?>
                     </a>
 
-                    <form class="uk-navbar-search" method="GET" action="https://linuxhub.it/search" autocomplete="off">
+                    <form class="uk-navbar-search" method="GET" action="search" autocomplete="off">
                         <i class="uk-icon-search"></i>
                         <input type="search" autcomplete="off" name="searchword" placeholder="Cerca .." />
                         <input type="submit" hidden />
@@ -121,19 +120,15 @@
         <div id="tm-main" class="tm-main uk-block <?= $params['main_style'] ?>">
             <div class="uk-container uk-container-center">
 
-                <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+                <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-medium-3-4' : 'uk-width-1-1'; ?>">
+                    <?= $view->render('content') ?>
+                </main>
 
-                    <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-medium-3-4' : 'uk-width-1-1'; ?>">
-                        <?= $view->render('content') ?>
-                    </main>
-
-                    <?php if ($view->position()->exists('sidebar')) : ?>
-                    <aside class="uk-width-medium-1-4 <?= $params['sidebar_first'] ? 'uk-flex-order-first-medium' : ''; ?>">
-                        <?= $view->position('sidebar', 'position-panel.php') ?>
-                    </aside>
-                    <?php endif ?>
-
-                </div>
+                <?php if ($view->position()->exists('sidebar')) : ?>
+                <aside class="uk-width-medium-1-4 <?= $params['sidebar_first'] ? 'uk-flex-order-first-medium' : ''; ?>">
+                    <?= $view->position('sidebar', 'position-panel.php') ?>
+                </aside>
+                <?php endif ?>
 
             </div>
         </div>
