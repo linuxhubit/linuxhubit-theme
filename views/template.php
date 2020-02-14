@@ -7,18 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="https://linuxhub.it/" />
+    <?php $view->style('theme', 'theme:css/theme-min.css') ?>
     <?= $view->render('head') ?>
-    <?php $view->style('theme', 'theme:css/theme.css') ?>
 </head>
 
 <body>
     <header>
-        <div>
+        <div itemscope itemtype="https://schema.org/WebSite">
             <a href="#">
                 <img src="https://linuxhub.it/storage/brand.svg" />
             </a>
-            <form method="GET" action="search" autocomplete="off">
-                <input type="search" autocomplete="off" name="searchword" placeholder="Cerca .." />
+            <meta itemprop="url" content="https://linuxhub.it/"/>
+            <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                <meta itemprop="target" content="https://linuxhub.it/search?q={searchword}" />
+                <input itemprop="query-input" type="search" autocomplete="off" name="searchword" placeholder="Cerca .." />
                 <img class="icon" src="packages/linuxhub/v3/images/zondicons/search.svg" />
                 <input type="submit" hidden>
             </form>
@@ -117,8 +119,6 @@
             </div>
         </div>
     </footer>
-
-    <script type="text/javascript"> var _paq = window._paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="//data.mirko.pm/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })(); </script>
 </body>
 
 </html>

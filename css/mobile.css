@@ -1,46 +1,46 @@
-@media screen and (max-width: 745px) {
+@media screen and (max-width:745px) {
 
     header>div,
     main,
     footer>div {
         padding: 0 10px;
-        max-width: initial;
+        max-width: initial
     }
 
     header>div>a {
         width: 37px;
         height: 48px;
         position: relative;
-        overflow: hidden;
+        overflow: hidden
     }
 
     header>div>a>img {
         position: absolute;
         width: 140px;
-        max-width: initial;
+        max-width: initial
     }
 
     header>div>form {
         margin-top: 9px;
-        width: calc(100% - 80px);
+        width: calc(100% - 80px)
     }
 
     header>div>nav>ul>li {
         display: block;
-        text-align: center;
+        text-align: center
     }
 
     header>div>ul {
-        display: none;
+        display: none
     }
 
     header>div>nav>ul {
         display: none;
-        padding: 10px 0 0 0;
+        padding: 10px 0 0 0
     }
 
     header>div>nav {
-        padding: 0 0 8px;
+        padding: 0 0 8px
     }
 
     header>div>nav::before {
@@ -50,49 +50,68 @@
         right: 18px;
         font-weight: 900;
         white-space: pre;
-        line-height: 7px;
+        line-height: 7px
     }
 
     header>div>nav:hover>ul {
-        display: block;
+        display: block
     }
 
     main>div>article {
         padding: 20px 20px 80px 20px;
         max-width: initial;
         width: initial;
+        margin: 0 12px 12px;
     }
 
     main>div {
-        display: initial;
+        display: initial
     }
 
-    main>div>article>h1+span+p+div+span {
-        padding: 20px 18px;
+    main>div>article>h2+span+p+div+span {
+        padding: 20px 18px
     }
 
     main>aside {
-        display: none;
+        display: none
     }
 
     main>article.hasSummary {
         max-width: initial;
         margin: initial;
-        padding: 0px 20px;
-        border-right: initial;
+        padding: 0 20px;
+        border-right: initial
     }
 
     main {
-        display: initial;
+        display: initial
     }
 
     main>article>h1 {
-        margin: .1em 0 12px;
+        margin: .1em 0 12px
     }
 
     #principles>div {
         display: initial;
         max-width: initial;
-        width: initial;
+        width: initial
+    }
+
+    main>article>div ul>li {
+        line-height: 26px
+    }
+
+    footer>div {
+        display: block;
+        text-align: center
+    }
+
+    footer>div>div {
+        flex: initial
+    }
+
+    header>div>nav>ul>li.selected {
+        padding: 3px 0;
+        margin: 3px 40px 8px
     }
 }

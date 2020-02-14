@@ -39,6 +39,7 @@
     </ul>
 </aside>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
 <script async>
     $.fn.scrollStopped = function (callback) {
         var that = this,
@@ -54,7 +55,7 @@
             a = $(e + " h1," + e + " h2," + e + " h3," + e + " h4");
         $(t).empty(), a.each(function (e) {
             var a = $(this);
-            a.attr("id", "title" + e), $(t).append("<li><a id='link" + e + "' href='#title" + e + "' class='" + a.prop('nodeName') + "' title='" + a.attr("tagName") + "'>" + a.html() + "</a></li>")
+            a.attr("id", "title" + e), $(t).append("<li><a id='link" + e + "' href='" + window.location.href +"#title" + e + "' class='" + a.prop('nodeName') + "' title='" + a.attr("tagName") + "'>" + a.html() + "</a></li>")
         }), $(t + " li").length < 1 && $(t).parent().remove();
 
         $(document).scrollStopped(function () {
@@ -72,5 +73,11 @@
                 })
             })
         })
+    });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
     });
 </script>
