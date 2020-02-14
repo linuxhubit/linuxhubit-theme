@@ -1,116 +1,110 @@
-.uk-articles-category--nginx {
-    background-image: url(../images/icon_nginx.png);
+.tag {
     padding: 0 0 0 20px;
+    background-repeat: no-repeat;
+    margin: 0 14px 0 0;
+    display: inline-table;
+    background-position: 0 5px;
+}
+
+.tag.nginx {
+    background-image: url(../images/tags/icon_nginx.png);
     color: #009830
 }
 
-.uk-articles-category--debian {
-    background-image: url(../images/icon_debian.png);
-    padding: 0 0 0 20px;
+.tag.debian {
+    background-image: url(../images/tags/icon_debian.png);
     color: #d90150
 }
 
-.uk-articles-category--apache {
-    background-image: url(../images/icon_apache.png);
-    padding: 0 0 0 20px;
+.tag.apache {
+    background-image: url(../images/tags/icon_apache.png);
     color: #84206f
 }
 
-.uk-articles-category--mysql {
-    background-image: url(../images/icon_mysql.png);
-    padding: 0 0 0 20px;
+.tag.mysql {
+    background-image: url(../images/tags/icon_mysql.png);
     color: #00618b
 }
 
-.uk-articles-category--ubuntu {
-    background-image: url(../images/icon_ubuntu.png);
-    padding: 0 0 0 20px;
+.tag.ubuntu {
+    background-image: url(../images/tags/icon_ubuntu.png);
     color: #ff6209
 }
 
-.uk-articles-category--nodejs {
-    background-image: url(../images/icon_nodejs.png);
-    padding: 0 0 0 20px;
+.tag.nodejs {
+    background-image: url(../images/tags/icon_nodejs.png);
     color: #8cc84b
 }
 
-.uk-articles-category--mongodb {
-    background-image: url(../images/icon_mongodb.png);
-    padding: 0 0 0 20px;
+.tag.mongodb {
+    background-image: url(../images/tags/icon_mongodb.png);
     color: #1e8f36
 }
 
-.uk-articles-category--chromeos {
-    background-image: url(../images/icon_chromeos.png);
-    padding: 0 0 0 20px;
+.tag.chromeos {
+    background-image: url(../images/tags/icon_chromeos.png);
     color: #3582ea
 }
 
-.uk-articles-category--centos {
-    background-image: url(../images/icon_centos.png);
-    padding: 0 0 0 20px;
+.tag.centos {
+    background-image: url(../images/tags/icon_centos.png);
     color: #232278
 }
 
-.uk-articles-category--fedora {
-    background-image: url(../images/icon_fedora.png);
-    padding: 0 0 0 20px;
+.tag.fedora {
+    background-image: url(../images/tags/icon_fedora.png);
     color: #243f72
 }
 
-.uk-articles-category--letsencrypt {
-    background-image: url(../images/icon_letsencrypt.png);
-    padding: 0 0 0 20px;
+.tag.letsencrypt {
+    background-image: url(../images/tags/icon_letsencrypt.png);
     color: #ffa403
 }
 
-.uk-articles-category--netcore {
-    background-image: url(../images/icon_netcore.png);
-    padding: 0 0 0 20px;
+.tag.netcore {
+    background-image: url(../images/tags/icon_netcore.png);
     color: #6c429c
 }
 
-.uk-articles-category--vestacp {
-    background-image: url(../images/icon_vestacp.png);
-    padding: 0 0 0 20px;
+.tag.vestacp {
+    background-image: url(../images/tags/icon_vestacp.png);
     color: #505050
 }
 
-.uk-articles-category--python {
-    background-image: url(../images/icon_python.png);
-    padding: 0 0 0 20px;
+.tag.python {
+    background-image: url(../images/tags/icon_python.png);
     color: #336b99
 }
 
-.uk-articles-category--php {
-    background-image: url(../images/icon_php.png);
-    padding: 0 0 0 20px;
+.tag.php {
+    background-image: url(../images/tags/icon_php.png);
     color: #4c6394
 }
 
-.uk-articles-category--nextcloud {
-    background-image: url(../images/icon_nextcloud.png);
-    padding: 0 0 0 20px;
+.tag.nextcloud {
+    background-image: url(../images/tags/icon_nextcloud.png);
     color: #118acc
 }
 
-.uk-articles-category--github {
-    background-image: url(../images/icon_github.png);
-    padding: 0 0 0 20px;
+.tag.github {
+    background-image: url(../images/tags/icon_github.png);
     color: #24292e
 }
 
-.uk-articles-category--archlinux,
-.uk-articles-category--arch.linux {
-    background-image: url(../images/icon_archlinux.png);
-    padding: 0 0 0 20px;
+.tag.archlinux,
+.tag.arch.linux {
+    background-image: url(../images/tags/icon_archlinux.png);
     color: #1793d1
 }
 
-.uk-articles-category--natale {
-    background-image: url(../images/icon_christmas.png);
+.tag.natale {
+    background-image: url(../images/tags/icon_christmas.png);
     padding: 0 0 0 18px;
     color: #ea6b77;
 }
 
-
+.tag.utilizzo.del.comando {
+    background-image: url(../images/tags/icon_utilizzo_del_comando.png);
+    padding: 0 0 0 21px;
+    color: #191919;
+}

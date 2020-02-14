@@ -1,0 +1,19 @@
+#search-form {
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.06);
+    margin: 0 0 20px 0;
+}
+
+#search-form .uk-margin-top {
+    margin: 0 0 40px 14px;
+    padding: 10px 0 20px 0;
+}
+
+.uk-search-page article {
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+.uk-search-page article > h1 {
+    font-size: 18px;
+}

@@ -1,0 +1,125 @@
+@media (prefers-color-scheme: dark) {
+
+    header,
+    main>div>article,
+    footer,
+    pre,
+    blockquote,
+    main>article>span+div {
+        background-color: #151617;
+    }
+    
+    pre {
+        border-color: #151617;
+    }
+
+    input,
+    textarea,
+    select {
+        background-color: #1b1c1d;
+    }
+
+    header a,
+    main>div>article>p,
+    main>div>article>h1+span,
+    footer {
+        color: #999;
+    }
+
+    main>article.hasSummary,
+    blockquote {
+        border-color: #3b3b3b;
+    }
+
+    header>div>a>img,
+    .icon,
+    .tag,
+    footer>div>div>a>img {
+        filter: brightness(0) invert();
+    }
+
+    header>div>form>.icon,
+    footer li>a,
+    main>aside>ul>li>a {
+        opacity: .4;
+    }
+
+    footer li:hover>a,
+    main>aside>ul>li:hover a,
+    main>aside>ul>li>a.active {
+        opacity: 1;
+    }
+
+    header>div>form:hover>.icon,
+    header>div>form>input:focus+.icon,
+    header>div>form>input:active+.icon,
+    header>div>a>img,
+    .tag,
+    footer>div>div>a>img,
+    footer a {
+        opacity: .8;
+    }
+
+    body,
+    input:focus,
+    textarea:focus,
+    select:focus,
+    input:active,
+    textarea:active,
+    select:active,
+    header>div>nav>ul>li.selected {
+        background-color: #1b1c1d;
+    }
+
+    a,
+    body,
+    input,
+    textarea,
+    select,
+    header>div>nav>ul>li.selected a,
+    main>div>article:first-child>a:last-child,
+    main>div>article:hover>a:last-child,
+    header>div>nav>ul>li:hover>a,
+    header>div>ul>li:hover>a,
+    footer h3,
+    footer li>a,
+    main>aside>ul>li>a.active {
+        color: #fff;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus,
+    input:active,
+    textarea:active,
+    select:active,
+    main>div>article:hover {
+        box-shadow: inset 0 0 0 2px #27292a;
+    }
+
+    main>div>article>a:last-child {
+        color: transparent;
+    }
+
+    main>article>div p,
+    main>article>div h2,
+    main>article>div h3,
+    main>article>div h4,
+    pre,
+    code.hljs  {
+        color: #c6c7cc;
+    }
+
+    em,
+    :not(pre)>code {
+        color: #ff6873
+    }
+
+    :not(pre)>code {
+        border-color: #f0615c;
+    }
+
+    span.hljs-string {
+        color: #3b70ae;
+    }
+}

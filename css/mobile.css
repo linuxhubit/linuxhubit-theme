@@ -1,76 +1,98 @@
-@media screen and (max-width:942px) {
-    .uk-container.uk-articles {
-        display: block
-    }
+@media screen and (max-width: 745px) {
 
-    .uk-articles article.uk-article {
+    header>div,
+    main,
+    footer>div {
+        padding: 0 10px;
         max-width: initial;
-        width: initial
     }
 
-    ul.uk-navbar-top {
-        display: none
+    header>div>a {
+        width: 37px;
+        height: 48px;
+        position: relative;
+        overflow: hidden;
     }
 
-    form.uk-navbar-search input[type="search"] {
-        min-width: initial
-    }
-
-    form.uk-navbar-search {
-        min-width: initial;
-        width: calc(100% - 102px)
-    }
-
-    .uk-secondary-navbar {
-        display: none
-    }
-
-    .uk-widgets {
-        display: block
-    }
-
-    .uk-search-page article.uk-article h1.tm-article-title.uk-article-title {
-        line-height: 27px
-    }
-
-    .uk-search-page article.uk-article {
-        padding: 20px 0
-    }
-
-    .uk-article-with-summary .uk-article-body {
-        width: 100%
-    }
-
-    .uk-article-with-summary .uk-article-summary {
-        display: none
-    }
-
-    a.uk-navbar-brand {
-        width: 52px;
-        overflow: hidden
-    }
-
-    a.uk-navbar-brand img {
+    header>div>a>img {
+        position: absolute;
+        width: 140px;
         max-width: initial;
-        margin: -95px 0 0 0;
-        width: 156px
     }
 
-    .uk-navbar-search-results {
-        display: none
+    header>div>form {
+        margin-top: 9px;
+        width: calc(100% - 80px);
     }
 
-    .uk-footer {
-        text-align: center
-    }
-
-    .uk-brand {
-        margin: 0 auto
-    }
-
-    .roles>div {
+    header>div>nav>ul>li {
         display: block;
+        text-align: center;
+    }
+
+    header>div>ul {
+        display: none;
+    }
+
+    header>div>nav>ul {
+        display: none;
+        padding: 10px 0 0 0;
+    }
+
+    header>div>nav {
+        padding: 0 0 8px;
+    }
+
+    header>div>nav::before {
+        content: ".\A.\A.";
+        position: absolute;
+        top: 14px;
+        right: 18px;
+        font-weight: 900;
+        white-space: pre;
+        line-height: 7px;
+    }
+
+    header>div>nav:hover>ul {
+        display: block;
+    }
+
+    main>div>article {
+        padding: 20px 20px 80px 20px;
         max-width: initial;
-        margin: 0 0 20px 0;
+        width: initial;
+    }
+
+    main>div {
+        display: initial;
+    }
+
+    main>div>article>h1+span+p+div+span {
+        padding: 20px 18px;
+    }
+
+    main>aside {
+        display: none;
+    }
+
+    main>article.hasSummary {
+        max-width: initial;
+        margin: initial;
+        padding: 0px 20px;
+        border-right: initial;
+    }
+
+    main {
+        display: initial;
+    }
+
+    main>article>h1 {
+        margin: .1em 0 12px;
+    }
+
+    #principles>div {
+        display: initial;
+        max-width: initial;
+        width: initial;
     }
 }
