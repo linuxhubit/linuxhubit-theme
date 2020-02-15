@@ -325,6 +325,7 @@ main>article>div>blockquote>p {
 blockquote {
     font-size: initial;
     font-style: italic;
+    margin-top: 20px;
     padding: 20px 30px;
 }
 
@@ -348,7 +349,7 @@ main>article>div ul {
 }
 
 main>article>div ul>li {
-    line-height: 5px;
+    padding-bottom: 20px;
 }
 
 main>article>div a {
