@@ -97,6 +97,10 @@
         width: initial
     }
 
+    main>article>div ul>li {
+        line-height: 26px
+    }
+
     footer>div {
         display: block;
         text-align: center
@@ -109,5 +113,11 @@
     header>div>nav>ul>li.selected {
         padding: 3px 0;
         margin: 3px 40px 8px
+    }
+
+    article>div>div {
+        width: initial;
+        display: block;
+        margin: 0 auto;
     }
 }

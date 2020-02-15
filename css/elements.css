@@ -349,9 +349,13 @@ main>article>div ul {
 }
 
 main>article>div ul>li {
-    padding-bottom: 20px;
+    margin: 0 0 0px;
 }
 
 main>article>div a {
     border-bottom: 1px dashed;
+}
+
+main>article>div ul>li p {
+    margin: 0;
 }

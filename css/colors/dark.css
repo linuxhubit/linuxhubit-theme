@@ -112,13 +112,7 @@
         text-decoration: underline
     }
 
-    header,
-    main>div>article,
-    footer,
-    pre,
-    blockquote,
-    main>article>span+div,
-    #search-form {
+    header, main>div>article, footer, pre, blockquote, main>article>span+div, #search-form, article>div>div:not(.tag) {
         background-color: #151617
     }
 
@@ -149,7 +143,7 @@
     .icon,
     .tag,
     footer>div>div>a>img {
-        filter: brightness(0) invert()
+        filter: brightness(0) invert();
     }
 
     header>div>form>.icon,

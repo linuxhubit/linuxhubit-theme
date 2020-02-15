@@ -1,0 +1,25 @@
+article {
+    text-align: center;
+}
+
+article>div>div {
+    display: inline-table;
+    width: 24%;
+    max-width: 260px;
+    vertical-align: top;
+}
+
+article>div>div ul>li {
+    display: block;
+}
+
+article>div>div ul {
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+article>div>div>div {
+    padding: 10px 20px;
+    font-style: italic;
+    font-size: 12px;
+}
