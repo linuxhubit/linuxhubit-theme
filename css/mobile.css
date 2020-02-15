@@ -97,10 +97,6 @@
         width: initial
     }
 
-    main>article>div ul>li {
-        line-height: 26px
-    }
-
     footer>div {
         display: block;
         text-align: center
