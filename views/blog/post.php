@@ -41,43 +41,33 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
 <script async>
-    $.fn.scrollStopped = function (callback) {
-        var that = this,
-            $this = $(that);
-        $this.scroll(function (ev) {
-            clearTimeout($this.data('scrollTimeout'));
-            $this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev))
+    $.fn.scrollStopped = function (t) {
+        var e = this,
+            i = $(e);
+        i.scroll(function (a) {
+            clearTimeout(i.data("scrollTimeout")), i.data("scrollTimeout", setTimeout(t.bind(e), 250, a))
         })
-    };
-    $(document).ready(function () {
-        var e = "main>article>div",
-            t = "main>aside>ul",
-            a = $(e + " h1," + e + " h2," + e + " h3," + e + " h4");
-        $(t).empty(), a.each(function (e) {
-            var a = $(this);
-            a.attr("id", "title" + e), $(t).append("<li><a id='link" + e + "' href='" + window.location.href +"#title" + e + "' class='" + a.prop('nodeName') + "' title='" + a.attr("tagName") + "'>" + a.html() + "</a></li>")
-        }), $(t + " li").length < 1 && $(t).parent().remove();
-
-        $(document).scrollStopped(function () {
-            var tt = $('h2, h3, h4, h5');
-            tt.each(function (e) {
-                var t = $(this);
-                var id = t.attr('id');
-                var distance = t.offset().top,
-                    $window = $(window);
-                $window.scroll(function () {
-                    if ($window.scrollTop() >= distance) {
-                        $('main>aside>ul a').removeClass('active');
-                        $('main>aside>ul a[href="#' + id + '"]').addClass('active')
-                    }
+    }, $(document).ready(function () {
+        var t = "main>article>div",
+            e = "main>aside>ul",
+            i = $(t + " h1," + t + " h2," + t + " h3," + t + " h4");
+        $(e).empty(), i.each(function (t) {
+            var i = $(this);
+            i.attr("id", "title" + t), $(e).append("<li><a id='link" + t + "' href='" + window.location.href + "#title" + t + "' class='" + i.prop("nodeName") + "' title='" + i.attr("tagName") + "'>" + i.html() + "</a></li>")
+        }), $(e + " li").length < 1 && $(e).parent().remove(), $(document).scrollStopped(function () {
+            $("h2, h3, h4, h5").each(function (t) {
+                var e = $(this),
+                    i = e.attr("id"),
+                    a = e.offset().top,
+                    o = $(window);
+                o.scroll(function () {
+                    o.scrollTop() >= a && ($("main>aside>ul a").removeClass("active"), $('main>aside>ul a[href="' + window.location.href + "#" + i + '"]').addClass("active"))
                 })
             })
         })
-    });
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre').forEach((block) => {
-            hljs.highlightBlock(block);
-        });
+    }), document.addEventListener("DOMContentLoaded", t => {
+        document.querySelectorAll("pre").forEach(t => {
+            hljs.highlightBlock(t)
+        })
     });
 </script>
