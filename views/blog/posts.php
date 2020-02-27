@@ -9,19 +9,17 @@
         <meta itemprop="image" content="images/cover.png" hidden />
         <h2 itemprop="headline"><?= $post->title ?></h2>
         <span>
-            <i itemprop="publisher" itemscope itemtype="http://schema.org/Organization" hidden>
+            <em itemprop="publisher" itemscope itemtype="http://schema.org/Organization" hidden>
                 <span itemprop="name">linux/hub</span>
                 <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                     <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
                 </span>
-            </i>
+            </em>
             Scritto da 
-            <i itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></i> il 
-            <i itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}') ?></i>
+            <em itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il 
+            <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}') ?></em>
         </span>
-        <p>Ruby on Rails è uno dei framework web più utilizzati nel mondo dei siti internet. Con esso è
-            possibile creare, utilizzando il linguaggio di programmazione Ruby, applicazioni web con un database
-            ed …</p>
+        <p><?= substr(strip_tags ($post->excerpt), 0, 200) ?: substr(strip_tags ($post->content), 0, 200) ?>…</p>
         <div>
             <?php 
                 $i=0;
@@ -44,7 +42,7 @@
         ?>
         <a itemprop="url" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
             <?= __('Read more') ?>
-            <img class="icon" src="packages/linuxhub/v3/images/zondicons/arrow-thin-right.svg" />
+            <img class="icon" src="packages/linuxhub/v3/images/zondicons/arrow-thin-right.svg" alt="Leggi articolo" />
         </a>
     </article>
     <?php endforeach ?>

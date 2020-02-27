@@ -1,56 +1,47 @@
-@media screen and (max-width:745px) {
+@media screen and (max-width:46.5625em) {
 
     header>div,
     main,
     footer>div {
-        padding: 0 10px;
+        padding: 0 .625rem;
         max-width: initial
     }
 
     header>div>a {
-        width: 37px;
-        height: 48px;
+        width: 2.3125rem;
+        height: 3rem;
         position: relative;
         overflow: hidden
     }
 
     header>div>a>img {
         position: absolute;
-        width: 140px;
+        width: 8.75rem;
         max-width: initial
     }
 
     header>div>form {
-        margin-top: 9px;
+        margin-top: .5625rem;
         width: calc(100% - 80px)
-    }
-
-    header>div>nav>ul>li {
-        display: block;
-        text-align: center
-    }
-
-    header>div>ul {
-        display: none
     }
 
     header>div>nav>ul {
         display: none;
-        padding: 10px 0 0 0
+        padding: .625rem 0 0
     }
 
     header>div>nav {
-        padding: 0 0 8px
+        padding: 0 0 .5rem
     }
 
     header>div>nav::before {
         content: ".\A.\A.";
         position: absolute;
-        top: 14px;
-        right: 18px;
+        top: .875rem;
+        right: 1.125rem;
         font-weight: 900;
         white-space: pre;
-        line-height: 7px
+        line-height: .4375rem
     }
 
     header>div>nav:hover>ul {
@@ -58,37 +49,25 @@
     }
 
     main>div>article {
-        padding: 20px 20px 80px 20px;
+        padding: 1.25rem 1.25rem 5rem;
         max-width: initial;
         width: initial;
-        margin: 0 12px 12px;
-    }
-
-    main>div {
-        display: initial
+        margin: 0 .75rem .75rem
     }
 
     main>div>article>h2+span+p+div+span {
-        padding: 20px 18px
-    }
-
-    main>aside {
-        display: none
+        padding: 1.25rem 1.125rem
     }
 
     main>article.hasSummary {
         max-width: initial;
         margin: initial;
-        padding: 0 20px;
+        padding: 0 1.25rem;
         border-right: initial
     }
 
-    main {
-        display: initial
-    }
-
     main>article>h1 {
-        margin: .1em 0 12px
+        margin: .1em 0 .75rem
     }
 
     #principles>div {
@@ -98,12 +77,7 @@
     }
 
     main>article>div ul>li {
-        line-height: 26px
-    }
-
-    footer>div {
-        display: block;
-        text-align: center
+        line-height: 1.625rem
     }
 
     footer>div>div {
@@ -111,13 +85,29 @@
     }
 
     header>div>nav>ul>li.selected {
-        padding: 3px 0;
-        margin: 3px 40px 8px
+        padding: .1875rem 0;
+        margin: .1875rem 2.5rem .5rem
     }
 
     article>div>div {
         width: initial;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto
+    }
+
+    header>div>nav>ul>li,
+    footer>div {
+        display: block;
+        text-align: center
+    }
+
+    header>div>ul,
+    main>aside {
+        display: none
+    }
+
+    main>div,
+    main {
+        display: initial
     }
 }

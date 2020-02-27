@@ -1,25 +1,33 @@
 article {
-    text-align: center;
+    text-align: center
 }
 
 article>div>div {
     display: inline-table;
     width: 24%;
-    max-width: 260px;
-    vertical-align: top;
+    max-width: 16.25rem;
+    vertical-align: top
 }
 
 article>div>div ul>li {
-    display: block;
+    display: block
 }
 
 article>div>div ul {
     margin: 0;
-    padding: 0 0 30px 0;
+    padding: 0 0 1.875rem
 }
 
 article>div>div>div {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     font-style: italic;
-    font-size: 12px;
+    font-size: 0.75rem
+}
+
+@media screen and (max-width:46.5625em) {
+    .roles div {
+        display: block;
+        width: initial;
+        margin: 0 auto 1.25rem
+    }
 }

@@ -1,19 +1,19 @@
 #search-form {
-    border-radius: 6px;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.06);
-    margin: 0 0 20px 0;
+    border-radius: .375rem;
+    box-shadow: .0625rem .125rem .25rem 0 rgba(0, 0, 0, 0.06);
+    margin: 0 0 1.25rem
 }
 
 #search-form .uk-margin-top {
-    margin: 0 0 40px 14px;
-    padding: 10px 0 20px 0;
+    margin: 0 0 2.5rem .875rem;
+    padding: .625rem 0 1.25rem
 }
 
 .uk-search-page article {
-    padding: 10px;
-    border-bottom: 1px solid;
+    padding: .625rem;
+    border-bottom: .0625rem solid
 }
 
-.uk-search-page article > h1 {
-    font-size: 18px;
+.uk-search-page article>h1 {
+    font-size: 1.125rem
 }

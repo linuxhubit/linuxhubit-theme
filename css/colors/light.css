@@ -69,7 +69,7 @@
     }
 
     .hljs-strong {
-        font-weight: bold
+        font-weight: 700
     }
 
     .hljs-link {
@@ -102,11 +102,7 @@
 
     button,
     input[type="submit"] {
-        background-color: #3a3a3a
-    }
-
-    button,
-    input[type="submit"] {
+        background-color: #3a3a3a;
         color: #fff
     }
 
@@ -136,7 +132,8 @@
     header>div>form>.icon,
     footer li>a,
     main>aside>ul>li>a {
-        opacity: .7
+        opacity: .7;
+        color: #2c2c2c
     }
 
     footer li:hover>a,
@@ -187,8 +184,10 @@
     main>article>div h4,
     pre,
     code.hljs,
-    main>article>div ul>li {
-        color: #333333
+    main>article>div ul>li,
+    main>div>article>h2+span>em,
+    main>article>h1+span>em {
+        color: #333
     }
 
     em,
@@ -206,12 +205,6 @@
     header>div>nav>ul>li:hover>a,
     header>div>ul>li:hover>a {
         color: #fe1804
-    }
-
-    header>div>form>.icon,
-    footer li>a,
-    main>aside>ul>li>a {
-        color: #2c2c2c
     }
 
     header>div>nav>ul>li.selected {

@@ -1,60 +1,60 @@
 #about>h1,
 #about>p {
-    text-align: center;
+    text-align: center
 }
 
 #about>h1::after {
     content: "";
     display: block;
-    border-bottom: 1px solid;
-    margin: 10px auto 0;
-    max-width: 300px;
+    border-bottom: 0.0625rem solid;
+    margin: 0.625rem auto 0;
+    max-width: 18.75rem
 }
 
 #about>h1 {
-    margin: 0 0 10px 0;
-    font-size: 1.9em;
+    margin: 0 0 0.625rem;
+    font-size: 1.9em
 }
 
 #about>section {
     text-align: center;
-    max-width: 740px;
-    margin: 0 auto;
+    max-width: 46.25rem;
+    margin: 0 auto
 }
 
 main>article {
-    width: 100%;
+    width: 100%
 }
 
 #about>section>p {
-    line-height: 30px;
-    margin: 0 0 10px 0;
+    line-height: 1.875rem;
+    margin: 0 0 0.625rem
 }
 
 #principles>div>p {
-    line-height: 21px;
-    font-size: 15px;
+    line-height: 1.3125rem;
+    font-size: 0.9375rem
 }
 
 section#principles {
-    margin: 50px auto 0;
-    max-width: 1060px;
+    margin: 3.125rem auto 0;
+    max-width: 66.25rem
 }
 
 #principles>div {
     display: inline-table;
     width: 29%;
-    padding: 10px 10px;
-    max-width: 349px;
+    padding: 0.625rem;
+    max-width: 21.8125rem
 }
 
 #about>section+div {
     text-align: center;
-    padding: 70px 0 30px 0;
+    padding: 4.375rem 0 1.875rem
 }
 
 #about>section+div>small {
     font-style: italic;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 1.1875rem
 }

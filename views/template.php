@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="https://linuxhub.it/" />
-    <?php $view->style('theme', 'theme:css/theme-min.css') ?>
     <?= $view->render('head') ?>
+    <?php $view->style('theme', 'theme:css/theme-min.css') ?>
 </head>
 
 <body>
     <header>
         <div itemscope itemtype="https://schema.org/WebSite">
             <a href="#">
-                <img src="https://linuxhub.it/storage/brand.svg" />
+                <img src="/packages/linuxhub/v3/images/logo.svg" alt="linux/hub" />
             </a>
             <meta itemprop="url" content="https://linuxhub.it/"/>
             <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
                 <meta itemprop="target" content="https://linuxhub.it/search?q={searchword}" />
                 <input itemprop="query-input" type="search" autocomplete="off" name="searchword" placeholder="Cerca .." />
-                <img class="icon" src="packages/linuxhub/v3/images/zondicons/search.svg" />
-                <input type="submit" hidden>
+                <img class="icon" src="packages/linuxhub/v3/images/zondicons/search.svg" alt="cerca" />
+                <input type="submit" name="submit" hidden>
             </form>
             <?= $view->menu('top', 'top-navbar.php') ?>
             <nav>
@@ -39,7 +39,7 @@
         <div>
             <div>
                 <a href="#">
-                    <img src="https://linuxhub.it/storage/brand.svg" />
+                    <img src="https://linuxhub.it/storage/brand.svg" alt="linux/hub" />
                 </a>
                 <small>We ❤ Open source.</small>
                 <h3>Link utili</h3>
@@ -66,21 +66,24 @@
                         <a href="https://linuxhub.it/staff">Il nostro Team</a>
                     </li>
                     <li>
-                        <a href="https://news.google.com/publications/CAAqBwgKMOma_Qow9v6JAw?hl=it&amp;gl=IT&amp;ceid=IT%3Ait">Aggiungi a Google News</a>
+                        <a href="https://github.com/linuxhubit">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="http://www.gnome.org/friends/"> <img src="https://static.gnome.org/friends/banners/fog-88x32.png" alt="Become a Friend of GNOME" /></a>
                     </li>
                     <li><span></span></li>
                     <li>
-                        <a href="https://linuxhub.it/privacy-policy/"><img class="icon" src="packages/linuxhub/v3/images/zondicons/lock-closed.svg" /> Privacy Policy</a>
+                        <a href="https://linuxhub.it/privacy-policy/"><img class="icon" src="packages/linuxhub/v3/images/zondicons/lock-closed.svg" alt="Privacy Policy" /> Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="mailto:amministrazione@linuxhub.it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/user.svg" /> Richiedi i tuoi dati</a>
+                        <a href="mailto:amministrazione@linuxhub.it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/user.svg" alt="Richiedi i tuoi dati" /> Richiedi i tuoi dati</a>
                     </li>
                     <li><span></span></li>
                     <li>
-                        <a href="#"><img class="icon" src="packages/linuxhub/v3/images/zondicons/news-paper.svg" /> Feeds RSS</a>
+                        <a href="#"><img class="icon" src="packages/linuxhub/v3/images/zondicons/news-paper.svg" alt="Feed RSS" /> Feeds RSS</a>
                     </li>
                     <li>
-                        <a href="mailto:amministrazione@linuxhub.it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/conversation.svg" /> Invia feedback</a>
+                        <a href="mailto:amministrazione@linuxhub.it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/conversation.svg" alt="Feedback" /> Invia feedback</a>
                     </li>
                 </ul>
             </div>
@@ -119,6 +122,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript"> var _paq = window._paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="//data.mirko.pm/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })(); </script> <noscript><p><img src="//data.mirko.pm/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 </body>
 
 </html>

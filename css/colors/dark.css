@@ -7,23 +7,6 @@
         background: #282c34
     }
 
-    .hljs-keyword,
-    .hljs-operator {
-        color: #F92672
-    }
-
-    .hljs-pattern-match {
-        color: #F92672
-    }
-
-    .hljs-pattern-match .hljs-constructor {
-        color: #61aeee
-    }
-
-    .hljs-function {
-        color: #61aeee
-    }
-
     .hljs-function .hljs-params {
         color: #A6E22E
     }
@@ -91,21 +74,12 @@
         color: #d19a66
     }
 
-    .hljs-symbol,
-    .hljs-bullet,
-    .hljs-link,
-    .hljs-meta,
-    .hljs-selector-id,
-    .hljs-title {
-        color: #61aeee
-    }
-
     .hljs-emphasis {
         font-style: italic
     }
 
     .hljs-strong {
-        font-weight: bold
+        font-weight: 700
     }
 
     .hljs-link {
@@ -127,12 +101,6 @@
         border-color: #151617
     }
 
-    input,
-    textarea,
-    select {
-        background-color: #1b1c1d
-    }
-
     header a,
     main>div>article>p,
     main>div>article>h1+span,
@@ -150,7 +118,7 @@
     .icon,
     .tag,
     footer>div>div>a>img {
-        filter: brightness(0) invert();
+        filter: brightness(0) invert()
     }
 
     header>div>form>.icon,
@@ -175,19 +143,6 @@
         opacity: .8
     }
 
-    body,
-    input:focus,
-    textarea:focus,
-    select:focus,
-    input:active,
-    textarea:active,
-    select:active,
-    header>div>nav>ul>li.selected,
-    button,
-    input[type="submit"] {
-        background-color: #1b1c1d
-    }
-
     a,
     body,
     input,
@@ -202,7 +157,9 @@
     footer li>a,
     main>aside>ul>li>a.active,
     button,
-    input[type="submit"] {
+    input[type="submit"],
+    main>div>article>h2+span>em,
+    main>article>h1+span>em {
         color: #fff
     }
 
@@ -241,5 +198,38 @@
 
     span.hljs-string {
         color: #3b70ae
+    }
+
+    .hljs-keyword,
+    .hljs-operator,
+    .hljs-pattern-match {
+        color: #F92672
+    }
+
+    .hljs-pattern-match .hljs-constructor,
+    .hljs-function,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-meta,
+    .hljs-selector-id,
+    .hljs-title {
+        color: #61aeee
+    }
+
+    input,
+    textarea,
+    select,
+    body,
+    input:focus,
+    textarea:focus,
+    select:focus,
+    input:active,
+    textarea:active,
+    select:active,
+    header>div>nav>ul>li.selected,
+    button,
+    input[type="submit"] {
+        background-color: #202122
     }
 }
