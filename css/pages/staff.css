@@ -4,9 +4,10 @@ article {
 
 article>div>div {
     display: inline-table;
-    width: 24%;
-    max-width: 16.25rem;
-    vertical-align: top
+    width: 32%;
+    max-width: 18.25rem;
+    vertical-align: top;
+    margin: 0 .5rem 2rem;
 }
 
 article>div>div ul>li {
@@ -19,9 +20,9 @@ article>div>div ul {
 }
 
 article>div>div>div {
-    padding: 0.625rem 1.25rem;
+    padding: .625rem 1.25rem;
     font-style: italic;
-    font-size: 0.75rem
+    font-size: .75rem
 }
 
 @media screen and (max-width:46.5625em) {

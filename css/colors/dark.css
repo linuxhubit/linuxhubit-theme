@@ -93,7 +93,9 @@
     blockquote,
     main>article>span+div,
     #search-form,
-    article>div>div:not(.tag) {
+    article>div>div:not(.tag),
+    section:nth-child(odd),
+    section>div>fieldset>a {
         background-color: #151617
     }
 
@@ -105,13 +107,17 @@
     main>div>article>p,
     main>div>article>h1+span,
     footer {
-        color: #999
+        color: #9f9ea4;
     }
 
     main>article.hasSummary,
     blockquote,
     .uk-search-page article {
         border-color: #3b3b3b
+    }
+
+    header>nav {
+        border-color: #202122
     }
 
     header>div>a>img,
@@ -148,10 +154,10 @@
     input,
     textarea,
     select,
-    header>div>nav>ul>li.selected a,
+    header>nav>ul>li.selected a,
     main>div>article:first-child>a:last-child,
     main>div>article:hover>a:last-child,
-    header>div>nav>ul>li:hover>a,
+    header>nav>ul>li:hover>a,
     header>div>ul>li:hover>a,
     footer h3,
     footer li>a,
@@ -160,7 +166,7 @@
     input[type="submit"],
     main>div>article>h2+span>em,
     main>article>h1+span>em {
-        color: #fff
+        color: #d3d3d3
     }
 
     input:focus,
@@ -227,9 +233,13 @@
     input:active,
     textarea:active,
     select:active,
-    header>div>nav>ul>li.selected,
     button,
-    input[type="submit"] {
+    input[type="submit"],
+    section:nth-child(odd)>div>fieldset>a {
         background-color: #202122
+    }
+
+    main>aside>ul>li>a.active {
+        border-left-color: white
     }
 }

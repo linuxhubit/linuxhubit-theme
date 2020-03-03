@@ -76,10 +76,6 @@
         text-decoration: underline
     }
 
-    header {
-        box-shadow: 0 3px 8px -4px rgba(0, 0, 0, .15)
-    }
-
     h1,
     h2,
     h3,
@@ -96,13 +92,22 @@
     pre,
     blockquote,
     main>article>span+div,
-    #search-form {
+    #search-form,
+    section[style]>div>fieldset>a {
         background-color: #fff
     }
 
     button,
-    input[type="submit"] {
+    input[type="submit"],
+    section>div>fieldset>a {
         background-color: #3a3a3a;
+    }
+
+    section[style]>div>h2,
+    button,
+    input[type="submit"],
+    section[style]>div>p,
+    section>div>fieldset>a {
         color: #fff
     }
 
@@ -112,21 +117,27 @@
 
     input,
     textarea,
-    select {
+    select,
+    article>section:nth-child(odd) {
         background-color: #f5f5f5
     }
 
     header a,
     main>div>article>p,
     main>div>article>h1+span,
-    footer {
-        color: #4f5e81
+    footer,
+    section[style]>div>fieldset>a {
+        color: #353535
     }
 
     main>article.hasSummary,
     blockquote,
     .uk-search-page article {
         border-color: #d2d2d2
+    }
+
+    header>nav {
+        border-color: #e5e5e5
     }
 
     header>div>form>.icon,
@@ -142,13 +153,13 @@
         opacity: 1
     }
 
-    body,
     input:focus,
     textarea:focus,
     select:focus,
     input:active,
     textarea:active,
-    select:active {
+    select:active,
+    body {
         background-color: #f8f8f8
     }
 
@@ -201,13 +212,17 @@
     }
 
     a,
-    header>div>nav>ul>li.selected a,
-    header>div>nav>ul>li:hover>a,
+    header>div>ul>li.selected a,
+    header>div>ul>li:hover>a,
     header>div>ul>li:hover>a {
         color: #fe1804
     }
 
-    header>div>nav>ul>li.selected {
+    header>div>ul>li.selected {
         background-color: #ffece1
+    }
+
+    main>aside>ul>li>a.active {
+        border-left-color: #151515
     }
 }

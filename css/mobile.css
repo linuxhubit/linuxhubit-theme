@@ -3,15 +3,15 @@
     header>div,
     main,
     footer>div {
-        padding: 0 .625rem;
-        max-width: initial
+        padding: 0 .625rem .6rem;
+        max-width: initial;
     }
 
     header>div>a {
-        width: 2.3125rem;
+        width: 2.2125rem;
         height: 3rem;
         position: relative;
-        overflow: hidden
+        overflow: hidden;
     }
 
     header>div>a>img {
@@ -22,30 +22,11 @@
 
     header>div>form {
         margin-top: .5625rem;
-        width: calc(100% - 80px)
+        width: calc(100% - 60px);
     }
 
-    header>div>nav>ul {
-        display: none;
-        padding: .625rem 0 0
-    }
-
-    header>div>nav {
-        padding: 0 0 .5rem
-    }
-
-    header>div>nav::before {
-        content: ".\A.\A.";
-        position: absolute;
-        top: .875rem;
-        right: 1.125rem;
-        font-weight: 900;
-        white-space: pre;
-        line-height: .4375rem
-    }
-
-    header>div>nav:hover>ul {
-        display: block
+    header>nav {
+        display: none
     }
 
     main>div>article {
@@ -84,18 +65,12 @@
         flex: initial
     }
 
-    header>div>nav>ul>li.selected {
-        padding: .1875rem 0;
-        margin: .1875rem 2.5rem .5rem
-    }
-
     article>div>div {
         width: initial;
         display: block;
         margin: 0 auto
     }
 
-    header>div>nav>ul>li,
     footer>div {
         display: block;
         text-align: center
@@ -108,6 +83,6 @@
 
     main>div,
     main {
-        display: initial
+        display: block;
     }
 }

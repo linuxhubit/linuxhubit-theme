@@ -34,6 +34,7 @@
     <div><?= $post->content ?></div>
 </article>
 <aside>
+    <span>Indice</span>
     <ul>
         <li>Caricamento..</li>
     </ul>

@@ -13,8 +13,11 @@
 
 <body>
     <header>
+        <nav>
+            <?= $view->menu('main', 'menu-navbar.php') ?>
+        </nav>
         <div itemscope itemtype="https://schema.org/WebSite">
-            <a href="#">
+            <a href="/">
                 <img src="/packages/linuxhub/v3/images/logo.svg" alt="linux/hub" />
             </a>
             <meta itemprop="url" content="https://linuxhub.it/"/>
@@ -25,9 +28,6 @@
                 <input type="submit" name="submit" hidden>
             </form>
             <?= $view->menu('top', 'top-navbar.php') ?>
-            <nav>
-                <?= $view->menu('main', 'menu-navbar.php') ?>
-            </nav>
         </div>
     </header>
 
@@ -80,7 +80,10 @@
                     </li>
                     <li><span></span></li>
                     <li>
-                        <a href="#"><img class="icon" src="packages/linuxhub/v3/images/zondicons/news-paper.svg" alt="Feed RSS" /> Feeds RSS</a>
+                        <a href="https://news.google.com/publications/CAAqBwgKMOma_Qow9v6JAw?hl=it&gl=IT&ceid=IT:it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/bookmark-outline-add.svg" alt="Google News" /> Aggiungi a Google News</a>
+                    </li>
+                    <li>
+                        <a href="articles/feed"><img class="icon" src="packages/linuxhub/v3/images/zondicons/news-paper.svg" alt="Feed RSS" /> Feeds RSS</a>
                     </li>
                     <li>
                         <a href="mailto:amministrazione@linuxhub.it"><img class="icon" src="packages/linuxhub/v3/images/zondicons/conversation.svg" alt="Feedback" /> Invia feedback</a>
