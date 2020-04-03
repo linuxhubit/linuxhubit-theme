@@ -246,7 +246,8 @@ main>article>div {
 }
 
 main>article>div p,
-main>article>div ul>li {
+main>article>div ul>li,
+main>article>div ol>li {
     font-size: 1.1em;
     font-weight: 400;
     letter-spacing: .0531rem;
@@ -342,9 +343,10 @@ main>div>ol:last-child>li {
     padding: 0 .625rem 0 0
 }
 
-main>article>div ul {
+main>article>div ul,
+main>article>div ol {
     list-style: disc;
-    margin: 0 0 0 1rem
+    margin: 0 0 0 1rem;
 }
 
 main>article>div a {
@@ -353,6 +355,7 @@ main>article>div a {
 
 main>article>div>blockquote>p,
 main>article>div ul>li,
+main>article>div ol>li,
 main>article>div ul>li p {
     margin: 0
 }
@@ -428,4 +431,8 @@ main>div>article>div+h2+span+p+div {
 main>div>article {
     border: 1px solid;
     transition: all .2s ease-in-out;
+}
+
+main>article>div ol {
+    list-style: initial;
 }
