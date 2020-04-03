@@ -6,7 +6,15 @@
 <div>
     <?php foreach ($posts as $post) : ?>
     <article itemscope itemtype="http://schema.org/NewsArticle">
+        <?php if ($image = $post->get('image.src')): ?>
+            <div>
+                <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
+                    <img src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>" itemprop="image" content="<?= $image ?>" />
+                </a>
+            </div>
+        <?php else: ?>
         <meta itemprop="image" content="images/cover.png" hidden />
+        <?php endif ?>
         <h2 itemprop="headline"><?= $post->title ?></h2>
         <span>
             <em itemprop="publisher" itemscope itemtype="http://schema.org/Organization" hidden>

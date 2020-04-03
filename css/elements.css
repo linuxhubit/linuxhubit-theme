@@ -10,6 +10,10 @@ h5 {
     font-weight: 600;
 }
 
+a {
+    transition: all .2s ease-in-out;
+}
+
 header>div,
 main,
 footer>div,
@@ -74,17 +78,19 @@ input[type="submit"] {
 
 header>nav {
     padding: .2rem 0;
-    text-align-last: right;
+    text-align: right;
     border-bottom: .0625rem solid;
 }
 
 header>div>form>input {
     width: 100%;
     max-width: 21.25rem;
-    padding-left: 2.125rem
+    transition: all .2s ease-in-out;
+    padding-left: 2.125rem;
 }
 
-main>div>article {
+main>div>article,
+main>div>article>div {
     border-radius: .5rem;
     padding: 3.125rem 3.125rem 5rem;
     max-width: 48.2%;
@@ -286,7 +292,8 @@ main>aside {
 }
 
 main>aside>ul>li {
-    padding: 0 0 1rem
+    padding: 0 0 .9rem;
+    font-size: .9rem;
 }
 
 main>aside>ul>li>a.H3::before {
@@ -372,7 +379,53 @@ main>aside>ul>li>a {
     margin: 0 0 0 -1.85rem;
 }
 
-
 header {
-    box-shadow: 0 3px 8px -4px rgba(0, 0, 0, .15)
+    box-shadow: 0 3px 8px -4px rgba(0, 0, 0, .15);
+    border-bottom: 1px solid;
+}
+
+article.isPage p {
+    line-height: 1.82rem;
+    font-size: 1.1em;
+    margin: 1rem 0 0 0;
+}
+
+article.isPage h2,
+article.isPage h3,
+article.isPage h4,
+article.isPage h5 {
+    margin: 2rem 0 1rem 0;
+}
+
+article.isPage ul {
+    list-style: disc;
+    margin: 1rem 0 0 1rem;
+}
+
+main>div>article:first-child>div:not(:nth-child(5)) {
+    float: left;
+    max-width: calc(50% - 1.5rem);
+    margin: .1rem 1.5rem 0 0;
+}
+
+main>div>article>div>a,
+main>div>article>div>a>img {
+    display: block;
+}
+
+main>div>article>div {
+    padding: 0;
+    overflow: hidden;
+    margin: 0 0 .05rem 0;
+    max-width: initial;
+    box-shadow: none;
+}
+
+main>div>article>div+h2+span+p+div {
+    margin: 3rem 0 0 0;
+}
+
+main>div>article {
+    border: 1px solid;
+    transition: all .2s ease-in-out;
 }

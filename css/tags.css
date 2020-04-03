@@ -91,6 +91,11 @@
     color: #24292e
 }
 
+.tag.gnome {
+    background-image: url("../images/tags/icon_gnome.png");
+    color: #24292e
+}
+
 .tag.arch.linux,
 .tag.archlinux {
     background-image: url("../images/tags/icon_archlinux.png");

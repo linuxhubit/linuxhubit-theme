@@ -85,4 +85,10 @@
     main {
         display: block;
     }
+
+    main>div>article:first-child>div {
+        float: initial;
+        max-width: initial;
+        margin: 0 0 1.5rem 0;
+    }
 }

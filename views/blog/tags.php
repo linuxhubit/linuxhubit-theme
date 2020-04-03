@@ -12,11 +12,12 @@
         'chromeos',
         'letsencrypt',
         'netcore',
-	'natale',
+        'natale',
         'vestacp',
         'python',
         'php',
-	'github',
-	'arch linux',
+        'github',
+        'arch linux',
+        'gnome',
     ]
 ?>

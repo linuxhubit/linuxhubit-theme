@@ -48,7 +48,7 @@
                         <a target="_blank" href="https://t.me/linuxhub">Canale Telegram</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://t.me/gentedilinux">Gruppo Telegram</a>
+                        <a target="_blank" href="https://t.me/linuxpeople">Gruppo Telegram</a>
                     </li>
                     <li>
                         <a href="https://linuxhub.it/i-nostri-canali">Tutti i nostri canali</a>
@@ -71,6 +71,9 @@
                     <li>
                         <a href="http://www.gnome.org/friends/"> <img src="https://static.gnome.org/friends/banners/fog-88x32.png" alt="Become a Friend of GNOME" /></a>
                     </li>
+                    <li>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"> <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a>
+                    </li>
                     <li><span></span></li>
                     <li>
                         <a href="https://linuxhub.it/privacy-policy/"><img class="icon" src="packages/linuxhub/v3/images/zondicons/lock-closed.svg" alt="Privacy Policy" /> Privacy Policy</a>
@@ -92,7 +95,7 @@
             </div>
             <div>
                 <small>Tutto il materiale dei nostri autori, salvo apposita segnalazione, é di proprietá degli autori linux/hub.</small>
-                <small>Ne è vietata la riproduzione anche parziale se non autorizzata dagli stessi. <a href="https://www.copyrighted.com/website/CWByZximjydJ86hy?url=https%3A%2F%2Flinuxhub.it%2F" target="_blank">(registered/protected)</a></small>
+                <small>Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"><b>Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</b></a></small>
                 <h3>Sitemap</h3>
                 <ul>
                     <li>
@@ -102,7 +105,7 @@
                         <a href="https://linuxhub.it/libri">Libri - Biblioteca</a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://gentedilinux.linuxhub.it/">gentedilinux</a>
+                        <a target="_blank" href="https://linuxpeople.org/">linuxpeople.org</a>
                     </li>
                     <li>
                         <a href="https://linuxhub.it/index.php/info">Su di noi</a>
@@ -115,13 +118,13 @@
                     </li>
                 </ul>
                 <h3>Disclaimer</h3>
-                <small>linux/hub e gentedilinux, sono progetti non a scopo di lucro, creati a favore dell'Open source.</small>
-                <small>Nessuno dei nostri progetti genera introiti, lo staff viene retribuito con la passione nella divulgazione.</small>
-                <small>Per informazioni, collegamenti legali e altri, riferirsi a Mirko Brombin tramite i <a href="https://linuxhub.it/invia-feedback/">Form di contatto</a></small>
+                <small>linux/hub e linuxpeople, sono progetti non a scopo di lucro, creati a favore dell'Open source.</small>
+                <small>Per informazioni, collegamenti legali e altri, riferirsi a Mirko Brombin tramite <a href="mailto:amministrazione@linuxhub.it">E-mail</a></small>
+                <small>Facciamo uso di <b>Cookie</b> e raccogliamo dati sulla navigazione a scopo puramente statistico, leggi maggiori informazioni <a href="https://linuxhub.it/privacy-policy">qui</a>.</small>
                 <small>Questo portale non rappresenta una testata giornalistica, in quanto viene aggiornato senza alcuna periodicità.
                     <br>L'oggetto principalmente trattato sono le guide pratiche. Non può, pertanto, considerarsi un prodotto editoriale, ai sensi della legge
                     <a href="http://www.camera.it/parlam/leggi/01062l.htm" target="_blank">n. 62 del 7/03/2001.</small>
-                <small>developed with</small> <a target="_blank" href="https://biskuit.org/">Bis[ku]it</a>
+                <small>developed with</small> <a target="_blank" href="https://biskuit.org/">Biskuit</a>
             </div>
         </div>
     </footer>

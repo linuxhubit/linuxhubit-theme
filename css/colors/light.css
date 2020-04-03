@@ -4,6 +4,10 @@
         overflow-x: auto;
         padding: .5em;
         color: #383a42;
+    }
+
+    body,
+    .hljs {
         background: #fafafa
     }
 
@@ -100,7 +104,7 @@
     button,
     input[type="submit"],
     section>div>fieldset>a {
-        background-color: #3a3a3a;
+        background-color: #3a3a3a
     }
 
     section[style]>div>h2,
@@ -136,8 +140,14 @@
         border-color: #d2d2d2
     }
 
-    header>nav {
+    header>nav,
+    header,
+    main>div>article {
         border-color: #e5e5e5
+    }
+
+    main>div>article:hover {
+        border-color: transparent
     }
 
     header>div>form>.icon,
@@ -158,8 +168,7 @@
     select:focus,
     input:active,
     textarea:active,
-    select:active,
-    body {
+    select:active {
         background-color: #f8f8f8
     }
 
