@@ -1,6 +1,12 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 <?php include('tags.php') ?>
 
+<aside>
+    <span>Indice</span>
+    <ul>
+        <li>Caricamento..</li>
+    </ul>
+</aside>
 <article itemscope itemtype="http://schema.org/NewsArticle" class="hasSummary">
     <meta itemprop="image" content="images/cover.png" hidden />
     <h1 itemprop="headline"><?= $post->title ?></h1>
@@ -33,12 +39,6 @@
     </div>
     <div><?= $post->content ?></div>
 </article>
-<aside>
-    <span>Indice</span>
-    <ul>
-        <li>Caricamento..</li>
-    </ul>
-</aside>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
 <script async>

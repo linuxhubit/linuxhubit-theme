@@ -1,4 +1,10 @@
-html {
+html,
+input,
+textarea,
+select,
+fieldset,
+button,
+input[type="submit"] {
     font: normal 1rem / 1.625rem Heebo, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
@@ -86,11 +92,11 @@ header>div>form>input {
     width: 100%;
     max-width: 21.25rem;
     transition: all .2s ease-in-out;
-    padding-left: 2.125rem;
+    padding: .5rem 2.125rem;
 }
 
 main>div>article,
-main>div>article>div {
+main>div>article:first-child>div {
     border-radius: .5rem;
     padding: 3.125rem 3.125rem 5rem;
     max-width: 48.2%;
@@ -161,7 +167,7 @@ main>div>article>h2+span+p+div+span {
 
 header>div>form>.icon {
     position: absolute;
-    margin: .6875rem 0 0 .625rem;
+    margin: .86rem 0 0 .625rem;
     left: 0
 }
 
@@ -279,9 +285,9 @@ main>article>div h4 {
 
 main>article.hasSummary {
     max-width: calc(100% - 250px);
-    border-right: .0625rem solid;
-    margin: -1.5rem 1.25rem 0 0;
-    padding: 0 1.875rem 0 0;
+    border-left: .0625rem solid;
+    margin: -1.5rem 0 0 1.25rem;
+    padding: 0 0 0 1.875rem;
 }
 
 main>aside {
@@ -409,6 +415,7 @@ main>div>article:first-child>div:not(:nth-child(5)) {
     float: left;
     max-width: calc(50% - 1.5rem);
     margin: .1rem 1.5rem 0 0;
+    display: block;
 }
 
 main>div>article>div>a,
@@ -416,7 +423,7 @@ main>div>article>div>a>img {
     display: block;
 }
 
-main>div>article>div {
+main>div>article:first-child>div {
     padding: 0;
     overflow: hidden;
     margin: 0 0 .05rem 0;
@@ -435,4 +442,21 @@ main>div>article {
 
 main>article>div ol {
     list-style: initial;
+}
+
+main>div>article>div:not(:nth-child(5)) {
+    display: none;
+}
+
+.pagination>ul {
+    margin: 20px 10px;
+}
+
+.pagination>ul>li {
+    display: inline-table;
+    padding: 0 20px 0 0;
+}
+
+.hljs {
+    font-size: .9em;
 }

@@ -107,7 +107,7 @@
     main>div>article>p,
     main>div>article>h1+span,
     footer {
-        color: #9f9ea4;
+        color: #9f9ea4
     }
 
     main>article.hasSummary,
@@ -116,7 +116,9 @@
         border-color: #3b3b3b
     }
 
-    header>nav {
+    header>nav,
+    main>div>article,
+    header {
         border-color: #202122
     }
 

@@ -3,7 +3,7 @@
         display: block;
         overflow-x: auto;
         padding: .5em;
-        color: #383a42;
+        color: #383a42
     }
 
     body,
@@ -92,7 +92,6 @@
 
     header,
     main>div>article,
-    footer,
     pre,
     blockquote,
     main>article>span+div,
@@ -122,7 +121,8 @@
     input,
     textarea,
     select,
-    article>section:nth-child(odd) {
+    article>section:nth-child(odd),
+    footer {
         background-color: #f5f5f5
     }
 
