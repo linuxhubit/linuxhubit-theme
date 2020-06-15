@@ -1,247 +1,213 @@
 @media (prefers-color-scheme:dark) {
     .hljs {
+        box-shadow: none;
         display: block;
         overflow-x: auto;
-        padding: .5em;
+        padding: 0.5em;
         color: #abb2bf;
-        background: #282c34
+        background: #282c34;
     }
-
     .hljs-function .hljs-params {
-        color: #A6E22E
+        color: #A6E22E;
     }
-
     .hljs-function .hljs-params .hljs-typing {
-        color: #FD971F
+        color: #FD971F;
     }
-
     .hljs-module-access .hljs-module {
-        color: #7e57c2
+        color: #7e57c2;
     }
-
     .hljs-constructor {
-        color: #e2b93d
+        color: #e2b93d;
     }
-
     .hljs-constructor .hljs-string {
-        color: #9CCC65
+        color: #9CCC65;
     }
-
     .hljs-comment,
     .hljs-quote {
         color: #b18eb1;
-        font-style: italic
+        font-style: italic;
     }
-
     .hljs-doctag,
     .hljs-formula {
-        color: #c678dd
+        color: #c678dd;
     }
-
-    .hljs-section,
-    .hljs-name,
-    .hljs-selector-tag,
     .hljs-deletion,
+    .hljs-name,
+    .hljs-section,
+    .hljs-selector-tag,
     .hljs-subst {
-        color: #e06c75
+        color: #e06c75;
     }
-
     .hljs-literal {
-        color: #56b6c2
+        color: #56b6c2;
     }
-
-    .hljs-string,
-    .hljs-regexp,
     .hljs-addition,
     .hljs-attribute,
-    .hljs-meta-string {
-        color: #98c379
+    .hljs-meta-string,
+    .hljs-regexp,
+    .hljs-string {
+        color: #98c379;
     }
-
     .hljs-built_in,
     .hljs-class .hljs-title {
-        color: #e6c07b
+        color: #e6c07b;
     }
-
     .hljs-attr,
-    .hljs-variable,
+    .hljs-number,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-pseudo,
     .hljs-template-variable,
     .hljs-type,
-    .hljs-selector-class,
-    .hljs-selector-attr,
-    .hljs-selector-pseudo,
-    .hljs-number {
-        color: #d19a66
+    .hljs-variable {
+        color: #d19a66;
     }
-
     .hljs-emphasis {
-        font-style: italic
+        font-style: italic;
     }
-
     .hljs-strong {
-        font-weight: 700
+        font-weight: 700;
     }
-
     .hljs-link {
-        text-decoration: underline
+        text-decoration: underline;
     }
-
-    header,
-    main>div>article,
-    footer,
-    pre,
-    blockquote,
-    main>article>span+div,
     #search-form,
-    article>div>div:not(.tag),
-    section:nth-child(odd),
-    section>div>fieldset>a {
-        background-color: #151617
-    }
-
-    pre {
-        border-color: #151617
-    }
-
-    header a,
-    main>div>article>p,
-    main>div>article>h1+span,
-    footer {
-        color: #9f9ea4
-    }
-
-    main>article.hasSummary,
+    article > div > div:not(.tag),
     blockquote,
-    .uk-search-page article {
-        border-color: #3b3b3b
+    footer,
+    header,
+    main > article > span+div,
+    main > div > article,
+    pre,
+    section > div > fieldset > a,
+    section:nth-child(odd) {
+        background-color: #151617;
     }
-
-    header>nav,
-    main>div>article,
-    header {
-        border-color: #202122
+    pre {
+        border-color: #151617;
     }
-
-    header>div>a>img,
+    footer,
+    header a,
+    main > div > article > h1+span,
+    main > div > article > p {
+        color: #9f9ea4;
+    }
+    .uk-search-page article,
+    blockquote,
+    main > article.hasSummary {
+        border-color: #3b3b3b;
+    }
+    header,
+    header > nav,
+    main > div > article {
+        border-color: #202122;
+    }
     .icon,
     .tag,
-    footer>div>div>a>img {
-        filter: brightness(0) invert()
+    footer > div > div > a > img,
+    header > div > a > img {
+        filter:brightness(0) invert()
     }
-
-    header>div>form>.icon,
-    footer li>a,
-    main>aside>ul>li>a {
-        opacity: .4
+    footer li > a,
+    header > div > form > .icon,
+    main > aside > ul > li > a {
+        opacity: 0.4;
     }
-
-    footer li:hover>a,
-    main>aside>ul>li:hover a,
-    main>aside>ul>li>a.active {
-        opacity: 1
+    footer li:hover > a,
+    main > aside > ul > li > a.active,
+    main > aside > ul > li:hover a {
+        opacity: 1;
     }
-
-    header>div>form:hover>.icon,
-    header>div>form>input:focus+.icon,
-    header>div>form>input:active+.icon,
-    header>div>a>img,
     .tag,
-    footer>div>div>a>img,
-    footer a {
-        opacity: .8
+    footer > div > div > a > img,
+    footer a,
+    header > div > a > img,
+    header > div > form > input:active+.icon,
+    header > div > form > input:focus+.icon,
+    header > div > form:hover > .icon {
+        opacity: 0.8;
     }
-
     a,
     body,
-    input,
-    textarea,
-    select,
-    header>nav>ul>li.selected a,
-    main>div>article:first-child>a:last-child,
-    main>div>article:hover>a:last-child,
-    header>nav>ul>li:hover>a,
-    header>div>ul>li:hover>a,
-    footer h3,
-    footer li>a,
-    main>aside>ul>li>a.active,
     button,
+    footer h3,
+    footer li > a,
+    header > div > ul > li:hover > a,
+    header > nav > ul > li.selected a,
+    header > nav > ul > li:hover > a,
+    input,
     input[type="submit"],
-    main>div>article>h2+span>em,
-    main>article>h1+span>em {
-        color: #d3d3d3
+    main > div > article > h2+span > em,
+    main > article > h1+span > em,
+    main > aside > ul > li > a.active,
+    main > div > article:first-child > a:last-child,
+    main > div > article:hover > a:last-child,
+    select,
+    textarea {
+        color: #d3d3d3;
     }
-
-    input:focus,
-    textarea:focus,
-    select:focus,
     input:active,
-    textarea:active,
+    input:focus,
+    main > div > article:hover,
     select:active,
-    main>div>article:hover {
-        box-shadow: inset 0 0 0 2px #27292a
+    select:focus,
+    textarea:active,
+    textarea:focus {
+        box-shadow: inset 0 0 0 2px #27292a;
     }
-
-    main>div>article>a:last-child {
-        color: transparent
+    main > div > article > a:last-child {
+        color: transparent;
     }
-
-    main>article>div p,
-    main>article>div h2,
-    main>article>div h3,
-    main>article>div h4,
-    pre,
     code.hljs,
-    main>article>div ul>li {
-        color: #c6c7cc
+    main > article > div h2,
+    main > article > div h3,
+    main > article > div h4,
+    main > article > div p,
+    main > article > div ul > li,
+    pre {
+        color: #c6c7cc;
     }
-
-    em,
-    :not(pre)>code {
-        color: #ff6873
+    :not(pre) > code,
+    em {
+        color: #ff6873;
     }
-
-    :not(pre)>code {
-        border-color: #f0615c
+    :not(pre) > code {
+        border-color: #f0615c;
     }
-
     span.hljs-string {
-        color: #3b70ae
+        color: #3b70ae;
     }
-
     .hljs-keyword,
     .hljs-operator,
     .hljs-pattern-match {
-        color: #F92672
+        color: #F92672;
     }
-
-    .hljs-pattern-match .hljs-constructor,
-    .hljs-function,
-    .hljs-symbol,
     .hljs-bullet,
+    .hljs-function,
     .hljs-link,
     .hljs-meta,
+    .hljs-pattern-match .hljs-constructor,
     .hljs-selector-id,
+    .hljs-symbol,
     .hljs-title {
-        color: #61aeee
+        color: #61aeee;
     }
-
-    input,
-    textarea,
-    select,
     body,
-    input:focus,
-    textarea:focus,
-    select:focus,
-    input:active,
-    textarea:active,
-    select:active,
     button,
+    input,
+    input:active,
+    input:focus,
     input[type="submit"],
-    section:nth-child(odd)>div>fieldset>a {
-        background-color: #202122
+    section:nth-child(odd) > div > fieldset > a,
+    select,
+    select:active,
+    select:focus,
+    textarea,
+    textarea:active,
+    textarea:focus {
+        background-color: #202122;
     }
-
-    main>aside>ul>li>a.active {
-        border-left-color: white
+    main > aside > ul > li > a.active {
+        border-left-color: white;
     }
 }

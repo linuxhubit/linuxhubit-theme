@@ -8,6 +8,7 @@ article>div>div {
     max-width: 18.25rem;
     vertical-align: top;
     margin: 0 .5rem 2rem;
+    border: 1px solid #8e8e8e42;
 }
 
 article>div>div ul>li {

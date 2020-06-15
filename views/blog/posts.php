@@ -25,7 +25,7 @@
             </em>
             Scritto da 
             <em itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il 
-            <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}') ?></em>
+            <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>') ?></em>
         </span>
         <p><?= substr(strip_tags ($post->excerpt), 0, 200) ?: substr(strip_tags ($post->content), 0, 200) ?>…</p>
         <div>
@@ -39,7 +39,7 @@
                         $r="";
                     }
                     if (stripos(strtolower($post->content), $t) !== false) {             
-                        print('<div '.$r.'class="tag '.$t.'">'.$t.'</div>');
+                        print('<div '.$r.' class="tag '.$t.'">'.$t.'</div>');
                     }
                 }
             ?>
