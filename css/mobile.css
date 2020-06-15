@@ -17,7 +17,8 @@
     header>div>a>img {
         position: absolute;
         width: 8.75rem;
-        max-width: initial
+        max-width: initial;
+        clip: rect(0px,33px,28px,0px);
     }
 
     header>div>form {
@@ -45,6 +46,10 @@
         margin: initial;
         padding: 0 1.25rem;
         border-left: initial;
+    }
+
+    main > article,main>article.hasSummary {
+        padding-top: 1em;
     }
 
     main>article>h1 {
