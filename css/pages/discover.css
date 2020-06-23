@@ -49,3 +49,10 @@ article>small {
     font-size: .8rem;
     font-style: italic;
 }
+
+main>article {
+    border-radius: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}

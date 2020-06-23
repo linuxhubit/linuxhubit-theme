@@ -1,10 +1,12 @@
 html {
     box-sizing: border-box;
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 *,

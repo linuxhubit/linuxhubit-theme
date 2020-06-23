@@ -6,6 +6,10 @@
     <ul>
         <li>Caricamento..</li>
     </ul>
+    <?php
+        $r = number_format(str_word_count(strip_tags($post->content)) / 197);
+        print('<span>'.$r.' minuti circa di lettura</span>');
+    ?>
 </aside>
 <article itemscope itemtype="http://schema.org/NewsArticle" class="hasSummary">
     <meta itemprop="image" content="images/cover.png" hidden />
@@ -17,12 +21,12 @@
                 <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
             </span>
         </em>
-        Scritto da 
-        <em itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il 
+        Scritto da
+        <em itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il
         <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time> ') ?></em>
     </span>
     <div>
-        <?php 
+        <?php
             $i=0;
             foreach($taglist as $t) {
                 $i=$i+1;
@@ -31,7 +35,7 @@
                 } else {
                     $r="";
                 }
-                if (stripos(strtolower($post->content), $t) !== false) {             
+                if (stripos(strtolower($post->content), $t) !== false) {
                     print('<div '.$r.' class="tag '.$t.'">'.$t.'</div>');
                 }
             }
@@ -51,11 +55,13 @@
     }, $(document).ready(function () {
         var t = "main>article>div",
             e = "main>aside>ul",
+            a = e+">li:first-child a",
             i = $(t + " h1," + t + " h2," + t + " h3," + t + " h4");
         $(e).empty(), i.each(function (t) {
             var i = $(this);
             i.attr("id", "title" + t), $(e).append("<li><a id='link" + t + "' href='" + window.location.href + "#title" + t + "' class='" + i.prop("nodeName") + "' title='" + i.attr("tagName") + "'>" + i.html() + "</a></li>")
-        }), $(e + " li").length < 1 && $(e).parent().remove(), $(document).scrollStopped(function () {
+        }), $(a).addClass("active"),
+        $(e + " li").length < 1 && $(e).parent().remove(), $(document).scrollStopped(function () {
             $("h2, h3, h4, h5").each(function (t) {
                 var e = $(this),
                     i = e.attr("id"),
@@ -64,7 +70,7 @@
                 o.scroll(function () {
                     o.scrollTop() >= a && ($("main>aside>ul a").removeClass("active"), $('main>aside>ul a[href="' + window.location.href + "#" + i + '"]').addClass("active"))
                 })
-            })
+            });
         })
     }), document.addEventListener("DOMContentLoaded", t => {
         document.querySelectorAll("pre").forEach(t => {

@@ -72,7 +72,7 @@
     h2,
     h3,
     h4,
-    h5 {
+    h5, main > div > ol:last-child > li a:hover {
         color:#000
     }
     #search-form,
@@ -82,7 +82,7 @@
     main > article > span + div,
     main > div > article,
     pre,
-    section[style] > div > fieldset > a {
+    section[style] > div > fieldset > a, main > div > ol:last-child > li a:hover {
         background-color:#fff
     }
     button,
@@ -95,7 +95,7 @@
     section[style] > div > p,
     section > div > fieldset > a,
     section[style] > div > h2,
-    :not(pre) > code{
+    :not(pre) > code {
         color:#fff
     }
     pre {
@@ -118,16 +118,13 @@
     }
     .uk-search-page article,
     blockquote,
-    main > article.hasSummary {
+    main > article {
         border-color:#e4e4e4
     }
     header,
     header > nav,
-    main > div > article {
+    main > div > article, main > div > ol:last-child > li a:hover {
         border-color:#e5e5e5
-    }
-    main > div > article:hover {
-        border-color:transparent
     }
     footer li > a,
     header > div > form > .icon,
@@ -161,7 +158,6 @@
     }
     input:active,
     input:focus,
-    main > div > article:hover,
     select:active,
     select:focus,
     textarea:active,
@@ -180,7 +176,7 @@
     main > article > h1+span > em,
     main > div > article > h2+span > em,
     pre {
-        color:#263651;
+        color:#263651
     }
     .uk-search-page article > h1:hover > a,
     em {
@@ -201,7 +197,8 @@
     main > aside > ul > li > a.active {
         border-left-color:#151515
     }
-    main > article > div em, main > article > div i {
-        background-color: #fff6a4;
+    main > article > div em,
+    main > article > div i {
+        background-color:#fff6a4
     }
 }

@@ -38,7 +38,7 @@
                     } else {
                         $r="";
                     }
-                    if (stripos(strtolower($post->content), $t) !== false) {             
+                    if (stripos(strtolower($post->content), $t) !== false) {
                         print('<div '.$r.' class="tag '.$t.'">'.$t.'</div>');
                     }
                 }

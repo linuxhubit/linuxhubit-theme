@@ -19,5 +19,7 @@
         'github',
         'arch linux',
         'gnome',
+        'rhel',
+        'ssh',
     ]
 ?>
