@@ -1,99 +1,112 @@
-@media screen and (max-width:46.5625em) {
-
+@media screen and (max-width: 46.5625em) {
+    footer>div,
     header>div,
-    main,
-    footer>div {
-        padding: 0 .625rem .6rem;
+    main {
+        padding: 0 0.625rem 0.6rem;
         max-width: initial
     }
-
     header>div>a {
         width: 2.2125rem;
         height: 3rem;
         position: relative;
         overflow: hidden
     }
-
     header>div>a>img {
         position: absolute;
-        width: 8.75rem;
-        max-width: initial;
-        clip: rect(0px,33px,28px,0px);
+        width: 8.75rem
     }
-
     header>div>form {
-        margin-top: .5625rem;
+        margin-top: 0.5625rem;
         width: calc(100% - 60px)
     }
-
     header>nav {
         display: none
     }
-
     main>div>article {
         padding: 1.25rem 1.25rem 5rem;
         max-width: initial;
         width: initial;
-        margin: 0 .75rem .75rem
+        margin: 0 0.75rem 0.75rem
     }
-
     main>div>article>h2+span+p+div+span {
         padding: 1.25rem 1.125rem
     }
-
     main>article.hasSummary {
         max-width: initial;
         margin: initial;
         padding: 0 1.25rem;
-        border-left: initial;
+        border-left: initial
     }
-
-    main > article,main>article.hasSummary {
-        padding-top: 1em;
+    main>article,
+    main>article.hasSummary {
+        padding-top: 1em
     }
-
     main>article>h1 {
-        margin: .1em 0 .75rem
+        margin: 0.1em 0 0.75rem
     }
-
     #principles>div {
         display: initial;
         max-width: initial;
         width: initial
     }
-
     main>article>div ul>li {
         line-height: 1.625rem
     }
-
     footer>div>div {
         flex: initial
     }
-
     article>div>div {
         width: initial;
         display: block;
         margin: 0 auto
     }
-
     footer>div {
         display: block;
         text-align: center
     }
-
     header>div>ul,
     main>aside {
         display: none
     }
-
-    main>div,
-    main {
-        display: block
+    main,
+    main>div {
+        display: block;
+        padding: 0
     }
-
     main>div>article:first-child>div {
         float: initial;
         max-width: initial;
-        margin: 0 0 1.5rem 0
+        margin: 0 0 1.5rem
+    }
+    main {
+        margin-top: 0
+    }
+    main>article,
+    main>article.hasSummary,
+    main>div>article {
+        border-radius: 0;
+        border-top: 0;
+        margin: 0
+    }
+    main>div>article:nth-child(2n) {
+        margin: 0
+    }
+    main>div>article+ol {
+        text-align: center
+    }
+    header form>div article {
+        width: auto;
+        min-height: initial;
+        min-width: initial;
+        max-width: initial;
+        display: block;
+        margin: 0 0 1rem;
+    }
+    header form>div {
+        padding: 1rem 0;
+    }
+    header form>div>div {
+        max-width: initial;
+        padding: 0 1rem;
     }
 }

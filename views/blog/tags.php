@@ -21,5 +21,8 @@
         'gnome',
         'rhel',
         'ssh',
+        'bash',
+        'systemd',
+        'privacy',
     ]
 ?>

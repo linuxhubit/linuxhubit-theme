@@ -5,7 +5,7 @@
 
 <div>
     <?php foreach ($posts as $post) : ?>
-    <article itemscope itemtype="http://schema.org/NewsArticle">
+    <article itemscope itemtype="https://schema.org/NewsArticle">
         <?php if ($image = $post->get('image.src')): ?>
             <div>
                 <a class="uk-display-block" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
@@ -17,14 +17,14 @@
         <?php endif ?>
         <h2 itemprop="headline"><?= $post->title ?></h2>
         <span>
-            <em itemprop="publisher" itemscope itemtype="http://schema.org/Organization" hidden>
+            <em itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
                 <span itemprop="name">linux/hub</span>
                 <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                     <meta itemprop="url" content="https://linuxhub.it/storage/brand.png" />
                 </span>
             </em>
             Scritto da 
-            <em itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il 
+            <em itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il 
             <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>') ?></em>
         </span>
         <p><?= substr(strip_tags ($post->excerpt), 0, 200) ?: substr(strip_tags ($post->content), 0, 200) ?>…</p>

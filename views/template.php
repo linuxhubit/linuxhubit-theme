@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="https://linuxhub.it/" />
-    <?= $view->render('head') ?>
     <?php $view->style('theme', 'theme:css/theme-min.css') ?>
+    <?= $view->render('head') ?>
 </head>
 
 <body>
@@ -27,6 +27,7 @@
                 <input itemprop="query-input" type="search" autocomplete="off" name="searchword" placeholder="Cerca .." />
                 <img class="icon" src="packages/linuxhub/v3/images/zondicons/search.svg" alt="cerca" />
                 <input type="submit" name="submit" hidden>
+                <div></div>
             </form>
             <?= $view->menu('top', 'top-navbar.php') ?>
         </div>
@@ -44,7 +45,7 @@
                 </a>
                 <small>We ❤ Open source.</small>
                 <small>Tutto il materiale dei nostri autori, salvo apposita segnalazione, é di proprietá degli autori linux/hub.</small>
-                <small>Questa opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"><b>Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</b></a></small>
+                <small>Questa opera è distribuita con Licenza <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"><b>Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</b></a></small>
                 <ul>
                     <li><span></span></li>
                     <li>
@@ -116,10 +117,10 @@
                         <a href="https://linuxhub.it/index.php/search?searchword=pausacaffe&amp;ordering=newest&amp;searchphrase=all">#pausacaffè</a>
                     </li>
                     <li>
-                        <a href="http://www.gnome.org/friends/"> <img src="https://static.gnome.org/friends/banners/fog-88x32.png" alt="Become a Friend of GNOME" /></a>
+                        <a href="https://www.gnome.org/friends/"> <img src="https://static.gnome.org/friends/banners/fog-88x32.png" alt="Become a Friend of GNOME" /></a>
                     </li>
                     <li>
-                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"> <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a>
+                        <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it"> <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"></a>
                     </li>
                 </ul>
             </div>
@@ -130,7 +131,7 @@
                 <small>Facciamo uso di <b>Cookie</b> e raccogliamo dati sulla navigazione a scopo puramente statistico, leggi maggiori informazioni <a href="https://linuxhub.it/privacy-policy">qui</a>.</small>
                 <small>Questo portale non rappresenta una testata giornalistica, in quanto viene aggiornato senza alcuna periodicità.
                     <br>L'oggetto principalmente trattato sono le guide pratiche. Non può, pertanto, considerarsi un prodotto editoriale, ai sensi della legge
-                    <a href="http://www.camera.it/parlam/leggi/01062l.htm" target="_blank">n. 62 del 7/03/2001.</small></a>
+                    <a href="https://www.camera.it/parlam/leggi/01062l.htm" target="_blank">n. 62 del 7/03/2001.</small></a>
                     <a target="_blank" href="https://biskuit.org/"><small>developed with</small> Biskuit</a>
             </div>
         </div>
@@ -140,6 +141,30 @@
     <script type="text/javascript" async> var _paq = window._paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="https://data.mirko.pm/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })(); </script> <noscript><p><img src="//data.mirko.pm/matomo.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
     <!-- end of Matomo-->
 
+    <?= $view->render('footer') ?>
+     <script async>
+        var searchfield = $("header input[type='search']");
+        var searchresults = $('header form > div');
+        var searchresult = $('header form > div > div article');
+        var body = $('body');
+        $(document).ready(function() {
+            searchfield.bind('change keyup', function() {
+            window.scrollTo(0,0);
+            var searchkeywords = searchfield.val().replace(/ /g,"+");
+                searchresults.load('search?searchword='+searchkeywords+'&limit=12 .tm-main.tm-content.uk-width-medium-1-1');
+                searchresults.show();
+                body.css('overflow', 'hidden');
+            });
+        });
+        $(document).mouseup(function(e) {
+            if(!searchresult.is(e.target) && searchresults.has(e.target).length === 0) {
+                searchresults.empty();
+                searchfield.val('');
+                searchresults.attr('style', '');
+                body.attr('style', '');
+            }
+        });
+    </script>
     <script src="/packages/linuxhub/v3/js/instantclick.min.js" data-no-instant />
     <script data-no-instant>InstantClick.init();</script>
 </body>
