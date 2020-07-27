@@ -1,8 +1,8 @@
-@media screen and (max-width: 46.5625em) {
+@media screen and (max-width:46.5625em) {
     footer>div,
     header>div,
     main {
-        padding: 0 0.625rem 0.6rem;
+        padding: 0 .625rem .6rem;
         max-width: initial
     }
     header>div>a {
@@ -16,8 +16,8 @@
         width: 8.75rem
     }
     header>div>form {
-        margin-top: 0.5625rem;
-        width: calc(100% - 60px)
+        margin: .2625rem 0 0 .1rem;
+        width: calc(100% - 60px);
     }
     header>nav {
         display: none
@@ -26,7 +26,7 @@
         padding: 1.25rem 1.25rem 5rem;
         max-width: initial;
         width: initial;
-        margin: 0 0.75rem 0.75rem
+        margin: 0 .75rem .75rem
     }
     main>div>article>h2+span+p+div+span {
         padding: 1.25rem 1.125rem
@@ -42,7 +42,7 @@
         padding-top: 1em
     }
     main>article>h1 {
-        margin: 0.1em 0 0.75rem
+        margin: .1em 0 .75rem
     }
     #principles>div {
         display: initial;
@@ -86,7 +86,8 @@
     main>div>article {
         border-radius: 0;
         border-top: 0;
-        margin: 0
+        margin: 0;
+        border-bottom: 1px solid;
     }
     main>div>article:nth-child(2n) {
         margin: 0
@@ -100,13 +101,13 @@
         min-width: initial;
         max-width: initial;
         display: block;
-        margin: 0 0 1rem;
+        margin: 0 0 1rem
     }
     header form>div {
-        padding: 1rem 0;
+        padding: 1rem 0
     }
     header form>div>div {
         max-width: initial;
-        padding: 0 1rem;
+        padding: 0 1rem
     }
 }

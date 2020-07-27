@@ -1,5 +1,5 @@
 {
-  "name": "linuxhub-v3",
+  "name": "linuxhub-v4",
   "scripts": {
     "install": "bower install && gulp",
     "archive": "gulp && webpack -p && composer archive --format=zip"

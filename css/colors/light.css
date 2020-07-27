@@ -2,8 +2,8 @@
     .hljs {
         display: block;
         overflow-x: auto;
-        padding: 0.5em;
-        color: #383a42
+        padding: .5em 1rem;
+        color: #383a42;
     }
     .hljs {
         background: #fafafa
@@ -78,40 +78,40 @@
     }
     #search-form,
     blockquote,
-    header,
+    header form>div article,
     main>article,
     main>article>span+div,
     main>div>article,
     main>div>ol:last-child>li a:hover,
     pre,
     section[style]>div>fieldset>a,
-    header form>div article {
-        background-color: #fff
+    header>div>form>input {
+        background-color: #fff;
     }
     button,
-    input[type="submit"],
+    input[type=submit],
     section>div>fieldset>a {
         background-color: #3a3a3a
     }
+    :not(pre)>code,
     button,
-    input[type="submit"],
-    section[style]>div>p,
+    input[type=submit],
     section>div>fieldset>a,
     section[style]>div>h2,
-    :not(pre)>code {
+    section[style]>div>p {
         color: #fff
     }
     pre {
         border-color: #e5e5e5
     }
-    article>section:nth-child(odd),
     body,
+    article>section:nth-child(odd),
     footer,
+    html::-webkit-scrollbar-track,
     input,
     select,
-    textarea,
-    html::-webkit-scrollbar-track {
-        background-color: #f5f5f5
+    textarea {
+        background-color: #f9f9f9;
     }
     footer,
     header a,
@@ -122,28 +122,27 @@
     }
     .uk-search-page article,
     blockquote,
-    main>article {
+    main>article,
+    main>div>article {
         border-color: #e4e4e4
     }
-    header,
     header>nav,
-    main>div>article,
     main>div>ol:last-child>li a:hover {
         border-color: #e5e5e5
     }
     footer li>a,
     header>div>form>.icon,
     main>aside>ul>li>a {
-        opacity: 0.7;
+        opacity: .7;
         color: #2c2c2c
     }
     footer li:hover>a,
-    main>aside>ul>li>a.active,
-    main>aside>ul>li:hover a {
+    main>aside>ul>li:hover a,
+    main>aside>ul>li>a.active {
         opacity: 1
     }
-    input:active,
-    input:focus,
+    input:not([type="search"]):active,
+    input:not([type="search"]):focus,
     select:active,
     select:focus,
     textarea:active,
@@ -161,8 +160,8 @@
     textarea {
         color: #151515
     }
-    input:active,
-    input:focus,
+    input:not([type="search"]):active,
+    input:not([type="search"]):focus,
     select:active,
     select:focus,
     textarea:active,
@@ -188,11 +187,10 @@
         color: #2a3b58
     }
     :not(pre)>code {
-        background: #2DBFBD
+        background: #2dbfbd
     }
     a,
     header>div>ul>li.selected a,
-    header>div>ul>li:hover>a,
     header>div>ul>li:hover>a {
         color: #fe1804
     }
@@ -207,28 +205,28 @@
         background-color: #fff6a4
     }
     header form>div {
-        background-color: #e8e9ecf7;
+        background-color: #f9f9f9db;
         padding: 2rem 0;
     }
-
     ::-webkit-scrollbar-track {
         border: 7px solid #f5f5f5
     }
-
     ::-webkit-scrollbar-track:hover {
         background-color: #ececec
     }
-
     ::-webkit-scrollbar-thumb {
         background-color: #616161
     }
-
     ::-webkit-scrollbar-thumb:window-inactive {
         background-color: #949699
     }
-
     ::-webkit-scrollbar-thumb:hover {
         background-color: #191919
     }
+}
 
+@media screen and (max-width:46.5625em) {
+    body {
+        background-color: #fff;
+    }
 }

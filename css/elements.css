@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    background: transparent;
+    background: 0 0;
     height: 20px;
     width: 20px
 }
@@ -19,41 +19,25 @@
     width: 6px
 }
 
-button,
-fieldset,
-html,
-input,
-input[type="submit"],
-select,
-textarea {
-    font: normal 1rem / 1.625rem Heebo, "Helvetica Neue", Helvetica, Arial, sans-serif
+button,fieldset,html,input,input[type=submit],select,textarea {
+    font: normal 1rem/1.625rem Heebo,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: 600
+h1,h2,h3,h4,h5 {
+    font-weight: 600;
 }
 
 a {
-    transition: all 0.2s ease-in-out
+    transition: all .2s ease-in-out
 }
 
-footer>div,
-header>div,
-header>nav>ul,
-main,
-header form>div>div {
+footer>div,header form>div>div,header>div,header>nav>ul,main {
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 3.125rem
 }
 
-header>div>a,
-header>div>form,
-header>div>ul {
+header>div>a,header>div>form,header>div>ul {
     display: inline-table;
     vertical-align: middle
 }
@@ -63,71 +47,69 @@ header>div>ul {
     padding: 1.125rem 0
 }
 
-header>div>ul>li,
-header>nav>ul>li {
+header>div>ul>li,header>nav>ul>li {
     display: inline-table
 }
 
-header>div>ul>li>a,
-header>nav>ul>li.selected {
+header>div>ul>li>a,header>nav>ul>li.selected {
     border-radius: 1.25rem;
     font-weight: 500
 }
 
-footer>div>div>a>img,
-header>div>a>img {
+footer>div>div>a>img,header>div>a>img {
     height: 1.75rem;
-    margin: 0.813rem 0;
+    margin: .813rem 0;
     position: relative;
-    top: 0.2rem
+    top: .2rem
 }
 
 header>div>ul>li>a {
-    padding: 0 0.938rem;
-    font-size: 0.9063rem
+    padding: 0 .938rem;
+    font-size: .9063rem
 }
 
 header>div>form {
-    margin: -.09rem 0 0 0.625rem;
-    width: 30%;
-    position: relative
+    margin: -.09rem 0 0 19%;
+    width: 40%;
+    position: relative;
 }
 
-button,
-fieldset,
-input,
-input[type="submit"],
-select,
-textarea {
-    border-radius: 0.313rem;
+button,fieldset,input,input[type=submit],select,textarea {
+    border-radius: .313rem;
     border: 0;
-    padding: 0.625rem 0.625rem 0.563rem;
+    padding: .625rem .625rem .563rem;
     font-size: 1rem;
-    outline: none
+    outline: 0
 }
 
 header>nav {
-    padding: 0.2rem 0;
+    padding: .2rem 0;
     text-align: right;
-    border-bottom: 0.0625rem solid
+    border-bottom: .0625rem solid
+}
+
+header>div>form>input::placeholder {
+    font-weight: 500;
 }
 
 header>div>form>input {
     width: 100%;
-    max-width: 21.25rem;
-    transition: all 0.2s ease-in-out;
-    padding: 0.5rem 2.125rem
+    max-width: 26.25rem;
+    transition: all .2s ease-in-out;
+    padding: .5rem 2.125rem;
+    box-shadow: 0 10px 15px -3px rgba(78, 85, 105, 0.1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    border-radius: 3rem;
+    letter-spacing: .04rem;
+    font-weight: 600;
+    padding: .8rem 2.4rem;
 }
 
-main>div>article,
-main>div>article:first-child>div,
-main>div>ol:last-child>li a:hover,
-header form>div article {
-    border-radius: 0.5rem;
+header form>div article,main>div>article,main>div>article:first-child>div,main>div>ol:last-child>li a:hover {
+    border-radius: 1rem;
     padding: 3.125rem 3.125rem 5rem;
     max-width: 48.2%;
-    margin: 0 0.9% 1.0625rem;
-    box-shadow: 0.0625rem 0.125rem 0.25rem 0 rgba(0, 0, 0, .06);
+    margin: 0 .9% 3rem;
+    box-shadow: 0 25px 45px -12px rgba(110, 118, 128, 0.43);
     width: 100%;
     position: relative;
     top: 0;
@@ -155,18 +137,18 @@ main>div>article>p {
 
 main>div>article>h2+span {
     display: block;
-    font-size: 0.875rem
+    font-size: .88rem;
 }
 
 main>div>article>h2 {
     font-size: 1.375rem;
     line-height: 1.46364;
-    margin: 0 0 0.45rem;
-    letter-spacing: -.02rem
+    margin: 0 0 .45rem;
+    letter-spacing: -.02rem;
 }
 
 main>div>article:first-child>h2 {
-    font-size: 2rem
+    font-size: 2.1rem;
 }
 
 main>div>article>a:last-child {
@@ -178,30 +160,29 @@ main>div>article>a:last-child {
     font-size: 1.0625rem
 }
 
-main>aside>ul+span,
-main>div>article>h2+span+p+div+span {
+main>aside>ul+span,main>div>article>h2+span+p+div+span {
     position: absolute;
-    font-size: 0.9375rem;
-    opacity: 0.2;
+    font-size: .9375rem;
+    opacity: .2;
     bottom: 0;
     left: 0;
     padding: 1.5rem 3rem
 }
 
 .icon {
-    width: 0.875rem
+    width: .875rem
 }
 
 header>div>form>.icon {
     position: absolute;
-    margin: 0.86rem 0 0 0.625rem;
-    left: 0
+    margin: 1.1rem 0 0 .925rem;
+    left: 0;
 }
 
 main>div>article>a:last-child>.icon {
     position: relative;
-    top: 0.125rem;
-    margin: 0 0 0 0.625rem
+    top: .125rem;
+    margin: 0 0 0 .625rem
 }
 
 footer {
@@ -215,13 +196,13 @@ footer>div>div>a+small {
 }
 
 footer h3 {
-    margin: 0 0 0.625rem;
+    margin: 0 0 .625rem;
     font-size: 1.3em
 }
 
 footer ul>li>a {
-    padding: 0.25rem 0;
-    font-size: 0.875rem;
+    padding: .25rem 0;
+    font-size: .875rem;
     display: inline-block
 }
 
@@ -230,11 +211,10 @@ footer li span {
     display: block
 }
 
-footer>div>div>a+small,
-footer>div>div>small {
+footer>div>div>a+small,footer>div>div>small {
     display: block;
-    margin: 0 0 0.3125rem;
-    font-size: 0.75rem
+    margin: 0 0 .3125rem;
+    font-size: .75rem
 }
 
 footer>div {
@@ -243,55 +223,50 @@ footer>div {
 
 footer>div>div {
     flex: 1;
-    padding: 0 0.6em
+    padding: 0 .6em
 }
 
-footer small+h3,
-footer ul+h3 {
+footer small+h3,footer ul+h3 {
     margin-top: 1.25rem
 }
 
 footer>div>div>small:first-child {
     margin-top: 2.3125rem;
-    line-height: 0.9375rem
+    line-height: .9375rem
 }
 
 footer ul>li>a>img {
-    margin: 0 0.4375rem 0 0;
+    margin: 0 .4375rem 0 0;
     position: relative;
-    top: 0.0625rem
+    top: .0625rem
 }
 
 main>article>h1 {
     font-size: 2.3em;
-    margin: 0.8em 0 0.75rem;
+    margin: .8em 0 .75rem;
     line-height: 3rem
 }
 
 main>article>h1+span {
-    font-size: 0.875rem;
+    font-size: .875rem;
     line-height: 1.6875rem;
     margin: 0 0 .0625rem;
-    opacity: 0.7
+    opacity: .7
 }
 
 main>article>div {
     margin: 1.5625rem 0
 }
 
-main>article>div ol>li,
-main>article>div p,
-main>article>div ul>li {
+main>article>div ol>li,main>article>div p,main>article>div ul>li {
     font-size: 1.1em;
     font-weight: 400;
-    letter-spacing: 0.0531rem;
+    letter-spacing: .0531rem;
     line-height: 1.9em;
     margin: 0 0 1.5625rem
 }
 
-main>article>div h2,
-main>article>div h3,
-main>article>div h4 {
+main>article>div h2,main>article>div h3,main>article>div h4 {
     margin: 2.1875rem 0 1.5625rem
 }
 
@@ -306,9 +281,9 @@ main>article>div h3 {
 }
 
 main>article>div h4 {
-    font-size: 1.125rem;
+    font-size: 1.225rem;
     line-height: 1.5rem;
-    font-weight: 400
+    font-weight: 500;
 }
 
 main>article.hasSummary {
@@ -317,23 +292,22 @@ main>article.hasSummary {
 }
 
 main>article {
-    border: 0.0625rem solid;
     padding: 0 1.875rem;
-    box-shadow: 0.0625rem 0.125rem 0.25rem 0 rgba(19, 21, 26, 0.06);
-    border-radius: 5px
+    box-shadow: 0 25px 45px -12px rgba(110, 118, 128, 0.58);
+    border-radius: 5px;
 }
 
 main>aside {
     width: 12.875rem;
-    padding: 3.75rem 0.625rem;
+    padding: 3.75rem .625rem;
     position: sticky;
     top: 0;
     height: 10%
 }
 
 main>aside>ul>li {
-    padding: 0 0 0.9rem;
-    font-size: 0.9rem
+    padding: 0 0 .9rem;
+    font-size: .9rem
 }
 
 main>aside>ul>li>a.H3::before {
@@ -346,18 +320,17 @@ main>aside>ul>li>a.H4::before {
 
 :not(pre)>code {
     font-weight: 600;
-    border-radius: 0.1875rem;
-    font-size: 0.975rem;
-    padding: 0.125rem 0.3125rem
+    border-radius: .1875rem;
+    font-size: .975rem;
+    padding: .125rem .3125rem
 }
 
-blockquote,
-pre {
+blockquote,pre {
     padding: 1.875rem;
     font-size: 1.1rem;
     overflow: auto;
-    border: 0.0625rem solid;
-    border-radius: 0.1875rem;
+    border: .0625rem solid;
+    border-radius: .1875rem;
     margin: 0 0 1.875rem
 }
 
@@ -369,7 +342,7 @@ blockquote {
 }
 
 main>article>span+div {
-    font-size: 0.875rem;
+    font-size: .875rem;
     border-radius: 1.25rem;
     margin-bottom: 0;
     width: fit-content
@@ -378,23 +351,19 @@ main>article>span+div {
 main>div>ol:last-child>li {
     display: inline-table;
     margin: 0;
-    padding: 0 0.625rem 0 0
+    padding: 0 .625rem 0 0
 }
 
-main>article>div ol,
-main>article>div ul {
+main>article>div ol,main>article>div ul {
     list-style: disc;
     margin: 0 0 1rem 1rem
 }
 
 main>article>div a {
-    border-bottom: 0.0625rem dashed
+    border-bottom: .0625rem dashed
 }
 
-main>article>div>blockquote>p,
-main>article>div ol>li,
-main>article>div ul>li,
-main>article>div ul>li p {
+main>article>div ol>li,main>article>div ul>li,main>article>div ul>li p,main>article>div>blockquote>p {
     margin: 0
 }
 
@@ -404,8 +373,8 @@ main>div>article+ol {
 }
 
 header>nav>ul>li>a {
-    font-size: 0.8rem;
-    padding: 0 0.638rem
+    font-size: .8rem;
+    padding: 0 .638rem
 }
 
 main>aside>span {
@@ -421,10 +390,9 @@ main>aside>ul>li>a {
 }
 
 header {
-    box-shadow: 0 3px 8px -4px rgba(16, 17, 21, 0.15);
-    border-bottom: 1px solid;
     z-index: 1;
-    position: relative
+    position: relative;
+    padding: .4rem 0 .1rem;
 }
 
 article.isPage p {
@@ -433,10 +401,7 @@ article.isPage p {
     margin: 1rem 0 0
 }
 
-article.isPage h2,
-article.isPage h3,
-article.isPage h4,
-article.isPage h5 {
+article.isPage h2,article.isPage h3,article.isPage h4,article.isPage h5 {
     margin: 2rem 0 1rem
 }
 
@@ -448,19 +413,18 @@ article.isPage ul {
 main>div>article:first-child>div:not(:nth-child(5)) {
     float: left;
     max-width: calc(50% - 1.5rem);
-    margin: 0.1rem 1.5rem 0 0;
+    margin: .1rem 1.5rem 0 0;
     display: block
 }
 
-main>div>article>div>a,
-main>div>article>div>a>img {
+main>div>article>div>a,main>div>article>div>a>img {
     display: block
 }
 
 main>div>article:first-child>div {
     padding: 0;
     overflow: hidden;
-    margin: 0 0 0.05rem;
+    margin: 0 0 .05rem;
     max-width: initial;
     box-shadow: none
 }
@@ -469,10 +433,8 @@ main>div>article>div+h2+span+p+div {
     margin: 3rem 0 0
 }
 
-main>div>article,
-main>div>ol:last-child>li a:hover {
-    border: 1px solid;
-    transition: all 0.2s ease-in-out
+main>div>article,main>div>ol:last-child>li a:hover {
+    transition: all .2s ease-in-out;
 }
 
 main>article>div ol {
@@ -493,17 +455,16 @@ main>div>article>div:not(:nth-child(5)) {
 }
 
 .hljs {
-    font-size: 0.9em;
-    box-shadow: 0 5px 10px -3px rgba(132, 132, 132, 0.12), 0 3px 16px 2px rgba(116, 134, 162, 0.12), 0 8px 12px 1px rgba(34, 0, 51, .04);
+    font-size: .9em;
+    box-shadow: 0 5px 10px -3px rgba(132,132,132,.12),0 3px 16px 2px rgba(116,134,162,.12),0 8px 12px 1px rgba(34,0,51,.04);
     border: 0;
-    border-radius: 4px;
-    padding: 1rem 2rem
+    border-radius: .6rem;
+    padding: 1rem 2rem;
 }
 
-header>div>ul>li>a,
-main>aside>span {
+header>div>ul>li>a,main>aside>span {
     text-transform: uppercase;
-    font-size: 0.8em
+    font-size: .8em
 }
 
 main>aside>ul>li>a.active {
@@ -511,34 +472,32 @@ main>aside>ul>li>a.active {
     font-weight: 500
 }
 
-main>div>article:hover,
-header form>div article:hover {
-    box-shadow: 0.0625rem 0.325rem 0.45rem 0 rgba(0, 0, 0, .06);
-    top: -.1rem;
+header form>div article:hover,main>div>article:hover {
+    box-shadow: .0625rem .325rem .45rem 0 rgba(0,0,0,.06);
+    top: -.1rem
 }
 
 main>aside>ul+span {
     position: initial;
     padding: 0;
-    font-size: 0.7em
+    font-size: .7em
 }
 
 footer>div>div>a>img {
-    margin: 0 0 0.313rem;
-    top: -0.3rem
+    margin: 0 0 .313rem;
+    top: -.3rem
 }
 
-main>div>ol:last-child>li a,
-main>div>ol:last-child>li a:hover {
+main>div>ol:last-child>li a,main>div>ol:last-child>li a:hover {
     max-width: initial;
     width: initial;
-    padding: 0 0.3rem;
-    margin: 0 0.2rem
+    padding: 0 .3rem;
+    margin: 0 .2rem
 }
 
 header form>div {
     position: fixed;
-    top: 3.9rem;
+    top: 4.7rem;
     left: 0;
     bottom: 0;
     right: 0;
@@ -549,7 +508,7 @@ header form>div {
 
 header form>div article {
     width: 30%;
-    min-width: 20rem;
+    min-width: 28rem;
     display: inline-table;
     text-align: initial;
     padding: 2rem;
@@ -561,13 +520,17 @@ header form>div article ul.uk-article-meta {
 }
 
 header form>div {
-    padding: 2rem 0;
+    padding: 2rem 0
 }
 
 header form>div article h5 {
-    display: none;
+    display: none
 }
 
 header form>div article h1 {
-    line-height: 1.4em;
+    line-height: 1.4em
+}
+
+header>div {
+    max-width: 80rem;
 }

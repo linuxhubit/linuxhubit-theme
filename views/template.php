@@ -19,7 +19,7 @@
         -->
         <div itemscope itemtype="https://schema.org/WebSite">
             <a href="/">
-                <img src="/storage/logo-lh-icon.svg" alt="linux/hub" />
+                <img src="/storage/brand.svg" alt="linux/hub" />
             </a>
             <meta itemprop="url" content="https://linuxhub.it/"/>
             <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
@@ -142,7 +142,7 @@
     <!-- end of Matomo-->
 
     <?= $view->render('footer') ?>
-     <script async>
+     <script>
         var searchfield = $("header input[type='search']");
         var searchresults = $('header form > div');
         var searchresult = $('header form > div > div article');
@@ -165,8 +165,6 @@
             }
         });
     </script>
-    <script src="/packages/linuxhub/v3/js/instantclick.min.js" data-no-instant />
-    <script data-no-instant>InstantClick.init();</script>
 </body>
 
 </html>

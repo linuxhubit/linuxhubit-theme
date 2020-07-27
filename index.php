@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'v3',
+    'name' => 'v4',
 
     /**
      * Menu positions

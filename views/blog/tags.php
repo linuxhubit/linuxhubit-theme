@@ -24,5 +24,6 @@
         'bash',
         'systemd',
         'privacy',
+        'caddy',
     ]
 ?>

@@ -5,7 +5,7 @@
     margin: 0 .875rem .4rem 0;
     display: inline-table;
     background-position: .6rem .26rem;
-    border-radius: 4px
+    border-radius: 1rem;
 }
 
 .tag.nginx {
@@ -129,26 +129,32 @@
 }
 
 .tag.rhel {
-    background-image: url(../images/tags/rhel.png);
+    background-image: url(../images/tags/icon_rhel.png);
     color: #fb3333;
     background-color: #ffe3e3
 }
 
+.tag.caddy {
+    background-image: url(../images/tags/icon_caddy.png);
+    color: #269973;
+    background-color: #d4fde8
+}
+
 .tag.bash,
+.tag.privacy,
 .tag.ssh,
-.tag.systemd,
-.tag.privacy {
+.tag.systemd {
     padding-left: .7rem
 }
 
 .tag.ssh {
     color: #267999;
-    background-color: #dbf9f2;
+    background-color: #dbf9f2
 }
 
 .tag.bash {
     color: #7146b5;
-    background-color: #ebe5fd;
+    background-color: #ebe5fd
 }
 
 .tag.systemd {

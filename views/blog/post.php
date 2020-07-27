@@ -44,8 +44,13 @@
     <div><?= $post->content ?></div>
 </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-<script async>
+<script src="/packages/linuxhub/v3/js/highlight.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", t => {
+        document.querySelectorAll("pre").forEach(t => {
+            hljs.highlightBlock(t)
+        })
+    });
     setTimeout(() => {
         $.fn.scrollStopped = function (t) {
             var e = this,
@@ -74,10 +79,6 @@
                     })
                 });
             })
-        }), document.addEventListener("DOMContentLoaded", t => {
-            document.querySelectorAll("pre").forEach(t => {
-                hljs.highlightBlock(t)
-            })
-        });
-    }, 180);
+        }, 180);
+    });
 </script>
