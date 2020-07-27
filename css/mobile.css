@@ -17,7 +17,7 @@
     }
     header>div>form {
         margin: .2625rem 0 0 .1rem;
-        width: calc(100% - 60px);
+        width: calc(100% - 60px)
     }
     header>nav {
         display: none
@@ -87,7 +87,7 @@
         border-radius: 0;
         border-top: 0;
         margin: 0;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid
     }
     main>div>article:nth-child(2n) {
         margin: 0
@@ -110,10 +110,17 @@
         max-width: initial;
         padding: 0 1rem
     }
+    header>div>a>img:first-child {
+        display: none
+    }
+    header>div>a>img:last-child {
+        display: block!important;
+        top: .1rem;
+    }
 }
 
 @media screen and (max-width:1174px) {
-    header > div > form {
-        margin: -.09rem 0 0 1%;
+    header>div>form {
+        margin: -.09rem 0 0 1%
     }
 }
