@@ -1,9 +1,9 @@
-@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme: light) {
     .hljs {
         display: block;
         overflow-x: auto;
         padding: .5em 1rem;
-        color: #383a42;
+        color: #383a42
     }
     .hljs {
         background: #fafafa
@@ -73,20 +73,22 @@
     h3,
     h4,
     h5,
-    main>div>ol:last-child>li a:hover {
+    main>div>ol:last-child>li a:hover,
+    section[related]>div article h1 a {
         color: #000
     }
     #search-form,
     blockquote,
     header form>div article,
+    section[related]>div article,
+    header>div>form>input,
     main>article,
     main>article>span+div,
     main>div>article,
     main>div>ol:last-child>li a:hover,
     pre,
-    section[style]>div>fieldset>a,
-    header>div>form>input {
-        background-color: #fff;
+    section[style]>div>fieldset>a {
+        background-color: #fff
     }
     button,
     input[type=submit],
@@ -104,14 +106,14 @@
     pre {
         border-color: #e5e5e5
     }
-    body,
     article>section:nth-child(odd),
+    body,
     footer,
     html::-webkit-scrollbar-track,
     input,
     select,
     textarea {
-        background-color: #f9f9f9;
+        background-color: #f9f9f9
     }
     footer,
     header a,
@@ -123,7 +125,9 @@
     .uk-search-page article,
     blockquote,
     main>article,
-    main>div>article {
+    main>div>article,
+    main>article,
+    main>article.hasSummary {
         border-color: #e4e4e4
     }
     header>nav,
@@ -141,8 +145,8 @@
     main>aside>ul>li>a.active {
         opacity: 1
     }
-    input:not([type="search"]):active,
-    input:not([type="search"]):focus,
+    input:not([type=search]):active,
+    input:not([type=search]):focus,
     select:active,
     select:focus,
     textarea:active,
@@ -160,8 +164,8 @@
     textarea {
         color: #151515
     }
-    input:not([type="search"]):active,
-    input:not([type="search"]):focus,
+    input:not([type=search]):active,
+    input:not([type=search]):focus,
     select:active,
     select:focus,
     textarea:active,
@@ -206,7 +210,7 @@
     }
     header form>div {
         background-color: #f9f9f9db;
-        padding: 2rem 0;
+        padding: 2rem 0
     }
     ::-webkit-scrollbar-track {
         border: 7px solid #f5f5f5
@@ -225,8 +229,8 @@
     }
 }
 
-@media screen and (max-width:46.5625em) {
+@media screen and (max-width: 46.5625em) {
     body {
-        background-color: #fff;
+        background-color: #fff
     }
 }

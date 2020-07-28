@@ -44,8 +44,13 @@
     <div><?= $post->content ?></div>
 </article>
 
-<script src="/packages/linuxhub/v3/js/highlight.min.js"></script>
-<script>
+<section related>
+    <h4>Leggi anche</h4>
+    <div>Caricamento..</div>
+</section>
+
+<script src="/packages/linuxhub/v4/js/highlight.min.js"></script>
+<script async>
     document.addEventListener("DOMContentLoaded", t => {
         document.querySelectorAll("pre").forEach(t => {
             hljs.highlightBlock(t)
@@ -63,7 +68,10 @@
             var t = "main>article>div",
                 e = "main>aside>ul",
                 a = e+">li:first-child a",
-                i = $(t + " h1," + t + " h2," + t + " h3," + t + " h4");
+                i = $(t + " h1," + t + " h2," + t + " h3," + t + " h4"),
+                searchresults = $('section[related] > div'),
+                tag = $("main>article>span+div .tag:first-child").text();
+                keyword = tag ? tag : "nginx";
             $(e).empty(), i.each(function (t) {
                 var i = $(this);
                 i.attr("id", "title" + t), $(e).append("<li><a id='link" + t + "' href='" + window.location.href + "#title" + t + "' class='" + i.prop("nodeName") + "' title='" + i.attr("tagName") + "'>" + i.html() + "</a></li>")
@@ -78,7 +86,10 @@
                         o.scrollTop() >= a && ($("main>aside>ul a").removeClass("active"), $('main>aside>ul a[href="' + window.location.href + "#" + i + '"]').addClass("active"))
                     })
                 });
-            })
+            }),
+            /* Related articles */
+                searchresults.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
+                searchresults.show();
         }, 180);
     });
 </script>

@@ -152,7 +152,7 @@
             searchfield.bind('change keyup', function() {
             window.scrollTo(0,0);
             var searchkeywords = searchfield.val().replace(/ /g,"+");
-                searchresults.load('search?searchword='+searchkeywords+'&limit=12 .tm-main.tm-content.uk-width-medium-1-1');
+                searchresults.load('search?searchword='+searchkeywords+'&limit=12&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
                 searchresults.show();
                 body.css('overflow', 'hidden');
             });
