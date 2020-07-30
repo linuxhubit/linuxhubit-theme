@@ -56,7 +56,7 @@ header>div>form,
 header>div>ul,
 section[related]>div article {
     display: inline-table;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 header>div>ul {
@@ -117,7 +117,7 @@ header>div>form>input::placeholder {
     font-weight: 500
 }
 
-header>div>form>input {
+header>div>form>input[type="search"] {
     width: 100%;
     max-width: 26.25rem;
     transition: all .2s ease-in-out;
@@ -142,7 +142,7 @@ section[related]>div article {
     width: 100%;
     position: relative;
     top: 0;
-    text-align: initial;
+    text-align: initial
 }
 
 main>div {
@@ -158,7 +158,7 @@ main {
     margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 main>div>article>p {
@@ -328,7 +328,7 @@ main>article>div h4 {
 main>article.hasSummary {
     max-width: calc(100% - 250px);
     margin: 0 0 0 1.25rem;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 main>article {
@@ -343,7 +343,7 @@ main>aside {
     position: sticky;
     top: 0;
     height: 10%;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 main>aside>ul>li {
@@ -597,21 +597,21 @@ section[related] {
     flex-grow: 1;
     flex-basis: 100%;
     margin: 2rem 0 1rem 23%;
-    text-align: center;
+    text-align: center
 }
 
 section[related]>div article {
-    width: 31%;
+    width: 31%
 }
 
 section[related] .pagination {
-    display: none;
+    display: none
 }
 
 section[related] h4 {
     font-size: 1.4em;
     font-weight: 500;
-    margin: 1rem 0 1.3rem;
+    margin: 1rem 0 1.3rem
 }
 
 section[related]>div article {
@@ -619,16 +619,16 @@ section[related]>div article {
     vertical-align: top;
     min-height: 9rem;
     flex-grow: 1;
-    flex-basis: 100%;
+    flex-basis: 100%
 }
 
 section[related]>div>div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 section[related]>div>div>article:nth-child(6) {
     flex-grow: 1;
-    flex-basis: 100%;
+    flex-basis: 100%
 }
