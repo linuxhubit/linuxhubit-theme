@@ -1,5 +1,6 @@
 <?php $view->script('post', 'blog:app/bundle/post.js', 'vue') ?>
 <?php include('tags.php') ?>
+<?php include('months.php') ?>
 
 <aside>
     <span>Indice</span>
@@ -23,7 +24,10 @@
         </em>
         Scritto da
         <em itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name"><?= $post->user->name ?></span></em> il
-        <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>"><?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time> ') ?></em>
+        <em itemprop="datePublished" content="<?= $post->date->format(\DateTime::W3C) ?>">
+            <?php $d = date_parse_from_format("Y-n-j", $post->date->format(\DateTime::W3C)); ?>
+            <?= __('<time datetime="'.$post->date->format(\DateTime::W3C).'">'.$d["day"]." ".$months[(int)$d["month"]]." ".$d["year"].'</time> ') ?>
+        </em>
     </span>
     <div>
         <?php
