@@ -86,11 +86,11 @@
     });
     setTimeout(() => {
         $(document).ready(function () {
-            searchresults = $('section[related] > div'),
+            search_results = $('section[related] > div'),
             tag = $("main>article>span+div .tag:first-child").text();
             keyword = tag ? tag : "nginx";
-            searchresults.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
-            searchresults.show();
+            search_results.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
+            search_results.show();
         });
     }, 180);
     /*
