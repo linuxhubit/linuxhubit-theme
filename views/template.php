@@ -138,64 +138,11 @@
         </div>
     </footer>
 
-    <!-- Matomo -->
     <script type="text/javascript" async> var _paq = window._paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="https://data.mirko.pm/"; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s); })(); </script> <noscript><p><img src="//data.mirko.pm/matomo.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- end of Matomo-->
 
+    <?php $view->script('scripts', 'theme:js/scripts.min.js') ?>
+    <?php $view->script('search', 'theme:js/search.min.js', ['scripts'], ['defer' => true, 'async' => true]) ?>
     <?= $view->render('footer') ?>
-    <script>
-        body = document.getElementsByTagName("body")[0];
-        
-        function load(dom, url, source_dom=false) {
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.onreadystatechange = function() {
-                if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-                    content = xmlHttp.responseText;
-                    if(source_dom) {
-                        try {
-                            document.getElementById("content_process").remove();
-                        } catch {
-                            console.debug("No content process found.")
-                        }
-                        content_process = document.createElement("div"),
-                        content_process.innerHTML = content,
-                        content_process.id = "content_process",
-                        content_process.style.display = "none",
-                        body.appendChild(content_process),
-                        content = document.querySelector("#content_process " + source_dom).outerHTML
-                    }
-                    dom.innerHTML = content;
-                }
-            };
-            start = new Date().getTime();
-            xmlHttp.open("GET", url, true);
-            xmlHttp.send(null);
-        }
-
-        search_field = document.querySelector("header input[type='search']"),
-        search_results = document.querySelector("header form > div"),
-        search_result = document.querySelector("header form > div > div article"),
-        search_field.addEventListener("keyup", search),
-        search_keywords = "";
-
-        function search() {
-            window.scrollTo(0,0);
-            search_keywords = search_field.value.replace(/ /g,"+"),
-            search_url = 'search?searchword=' + search_keywords + '&limit=12&areas[0]=blog',
-            load(search_results, search_url, '.tm-main.tm-content.uk-width-medium-1-1'),
-            search_results.style.display = "block",
-            body.style.overflow = "hidden"
-        }
-
-        window.addEventListener('mouseup', e => {
-            if(e.target.tagName != "ARTICLE" & e.target.tagName != "INPUT") {
-                console.log(e.target.tagName),
-                search_results.style.display = "none",
-                body.style.overflow = "auto",
-                search_field.value  = ""
-            }
-        });
-    </script>
 </body>
 
 </html>
