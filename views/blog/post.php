@@ -50,12 +50,50 @@
 </section>
 
 <script src="/packages/linuxhub/v4/js/highlight.min.js"></script>
-<script async>
-    document.addEventListener("DOMContentLoaded", t => {
-        document.querySelectorAll("pre").forEach(t => {
-            hljs.highlightBlock(t)
+<script>
+    // highlight.js
+    document.querySelectorAll("pre").forEach(t => {
+        hljs.highlightBlock(t)
+    }),
+    // summary
+    headings = document.querySelectorAll("main>article>div h2,main>article>div h3,main>article>div h4"),
+    summary = document.querySelector("aside>ul"),
+    document.querySelector("aside>ul>li:first-child").remove(),
+    url = window.location.href,
+    i=0,
+    headings.forEach(t => {
+        tt = 'title' + i.toString(),
+        t.setAttribute('id', tt),
+        li = document.createElement("li"),
+        a = document.createElement("a"),
+        a.classList.add(tt, t.tagName.toUpperCase()), a.setAttribute("href", url + '#' + tt), a.innerText = t.innerText
+        li.appendChild(a),
+        summary.appendChild(li),
+        ++i
+    }),
+    // on scroll active summary item
+    window.addEventListener('scroll', function(e) {
+        headings.forEach(t => {
+            if(window.scrollY >= (t.offsetTop - 50) & window.scrollY <= (t.offsetTop + 50)) {
+                try {
+                    document.querySelector("aside>ul>li>a.active").classList.remove("active")
+                } catch (error) {
+                    console.debug("No selected summary item found.")
+                }
+                document.querySelector('aside>ul>li>a.' + t.getAttribute("id")).classList.add("active")
+            }
         })
     });
+    setTimeout(() => {
+        $(document).ready(function () {
+            searchresults = $('section[related] > div'),
+            tag = $("main>article>span+div .tag:first-child").text();
+            keyword = tag ? tag : "nginx";
+            searchresults.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
+            searchresults.show();
+        });
+    }, 180);
+    /*
     setTimeout(() => {
         $.fn.scrollStopped = function (t) {
             var e = this,
@@ -65,6 +103,11 @@
             })
         },
         $(document).ready(function () {
+            searchresults = $('section[related] > div'),
+            tag = $("main>article>span+div .tag:first-child").text();
+            keyword = tag ? tag : "nginx";
+            searchresults.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
+            searchresults.show();
             var t = "main>article>div",
                 e = "main>aside>ul",
                 a = e+">li:first-child a",
@@ -87,9 +130,10 @@
                     })
                 });
             }),
-            /* Related articles */
+            /* Related articles
                 searchresults.load('search?searchword='+keyword+'&limit=6&areas[0]=blog .tm-main.tm-content.uk-width-medium-1-1');
                 searchresults.show();
         }, 180);
     });
+        */
 </script>
