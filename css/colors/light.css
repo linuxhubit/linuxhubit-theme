@@ -67,8 +67,12 @@
         background-color: #3a3a3a
     }
 
-    :not(pre)>code,button,input[type=submit],section>div>fieldset>a,section[style]>div>h2,section[style]>div>p {
+    :not(pre)>code,button,input[type=submit],section>div>fieldset>a,section[style]>div>h2,section[style]>div>p,main>aside>span:first-child::after {
         color: #fff
+    }
+
+    main>aside {
+        border-color: #e2e2e2
     }
 
     pre {
@@ -124,7 +128,7 @@
         color: #2a3b58
     }
 
-    :not(pre)>code {
+    :not(pre)>code,main>aside>span:first-child::after {
         background: #2dbfbd
     }
 

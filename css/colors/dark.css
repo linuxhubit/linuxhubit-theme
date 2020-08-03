@@ -7,6 +7,9 @@
         color: #abb2bf;
         background: #282c34
     }
+    main>aside>span:first-child::after {
+        color: #fff
+    }
     .hljs-function .hljs-params {
         color: #A6E22E
     }
@@ -94,7 +97,8 @@
     }
     .uk-search-page article,
     blockquote,
-    main>article.hasSummary {
+    main>article.hasSummary,
+    main>aside{
         border-color: #3b3b3b
     }
     header,
@@ -166,6 +170,9 @@
     main>article>div ul>li,
     pre {
         color: #c6c7cc
+    }
+    main>aside>span:first-child::after {
+        background-color: #ff6873
     }
     :not(pre)>code,
     em {

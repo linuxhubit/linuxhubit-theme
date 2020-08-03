@@ -133,7 +133,8 @@
                 <small>Questo portale non rappresenta una testata giornalistica, in quanto viene aggiornato senza alcuna periodicità.
                     <br>L'oggetto principalmente trattato sono le guide pratiche. Non può, pertanto, considerarsi un prodotto editoriale, ai sensi della legge
                     <a href="https://www.camera.it/parlam/leggi/01062l.htm" target="_blank">n. 62 del 7/03/2001.</small></a>
-                    <a target="_blank" href="https://biskuit.org/"><small>developed with</small> Biskuit</a>
+                    <a target="_blank" href="https://mirko.pm/"><small>a project by <b>mirko.pm</b></small></a><br/>
+                    <a target="_blank" href="https://biskuit.org/"><small>powered by <b>Biskuit</b></small></a>
             </div>
         </div>
     </footer>
