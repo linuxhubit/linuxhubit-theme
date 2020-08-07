@@ -1,4 +1,5 @@
 <?php $months = [
+    '',
     'Gennaio',
     'Febbraio',
     'Marzo',
