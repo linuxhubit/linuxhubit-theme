@@ -1,6 +1,9 @@
 # linux/hub theme
 This is the official linuxhub.it theme for the Biskuit CMS.
 
+<img src="https://img.shields.io/badge/license-GPLv3-blue" />
+<img sc="https://img.shields.io/badge/version-4.0-green" />
+
 ## How to use
 First of all you need a [Biskuit](https://github.com/biskuitorg/biskuit) installation. This theme is not offered as a package and cannot be installed in the official way in Biskuit. You need to fetch the latest git to `/packages/linuxhubit/v4` and enable it from the settings table in your database.
 
