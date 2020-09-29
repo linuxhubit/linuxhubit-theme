@@ -21,6 +21,13 @@
             <a href="/">
                 <img src="/storage/brand.svg" alt="linux/hub" />
                 <img src="/storage/logo-lh-icon.svg" alt="linux/hub" style="display:none" />
+		<div style="display:none">
+		<?php
+			if($_SERVER['REQUEST_URI'] == "/"){
+				print("<h1>Educazione per Linux ed Open source</h1>"); 
+			}
+		?>
+		</div>
             </a>
             <meta itemprop="url" content="https://linuxhub.it/"/>
             <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">

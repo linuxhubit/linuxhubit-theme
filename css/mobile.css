@@ -128,11 +128,11 @@
         padding: 0 1rem
     }
 
-    header>div>a>img:first-child {
+    header>div>a img:first-child {
         display: none
     }
 
-    header>div>a>img:last-child {
+    header>div>a img:nth-child(2) {
         display: block!important;
         top: .1rem
     }
@@ -143,7 +143,7 @@
         border-bottom: 1px solid;
         max-height: 40vh;
         overflow-y: auto;
-        z-index: 3;
+        z-index: 3
     }
 
     main>aside>ul>li a {
@@ -192,11 +192,13 @@
         border-radius: .2rem;
         padding: 0 .3rem
     }
+
     @media (prefers-color-scheme:dark) {
         main>aside {
             background-color: #202122
         }
     }
+
     @media (prefers-color-scheme:light) {
         main>aside {
             background-color: #fff
