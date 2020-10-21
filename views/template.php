@@ -32,9 +32,10 @@
             <meta itemprop="url" content="https://linuxhub.it/"/>
             <form method="GET" action="search" autocomplete="off" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
                 <meta itemprop="target" content="https://linuxhub.it/search?q={searchword}" />
-                <input itemprop="query-input" type="search" autocomplete="off" name="searchword" placeholder="Cerca .." />
+                <input itemprop="query-input" type="search" autocomplete="off" name="searchword" spellcheck="false" placeholder="Cerca [beta].." />
                 <img class="icon" src="packages/linuxhub/v3/images/zondicons/search.svg" alt="cerca" />
                 <input type="submit" name="submit" hidden>
+                <section></section>
                 <div></div>
             </form>
             <?= $view->menu('top', 'top-navbar.php') ?>

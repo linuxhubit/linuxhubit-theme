@@ -67,7 +67,7 @@
         background-color: #3a3a3a
     }
 
-    :not(pre)>code,button,input[type=submit],section>div>fieldset>a,section[style]>div>h2,section[style]>div>p,main>aside>span:first-child::after {
+    :not(pre)>code,button,input[type=submit],main>aside>span:first-child::after,section>div>fieldset>a,section[style]>div>h2,section[style]>div>p {
         color: #fff
     }
 
@@ -87,7 +87,7 @@
         color: #20133a
     }
 
-    .uk-search-page article, main>article, main>article.hasSummary, main>div>article {
+    .uk-search-page article,main>article,main>article.hasSummary,main>div>article {
         border-color: #e4e4e4
     }
 
@@ -139,6 +139,7 @@
     blockquote {
         border-color: #fe1804
     }
+
     header>div>ul>li.selected {
         background-color: #ffece1
     }
@@ -152,8 +153,8 @@
     }
 
     header form>div {
-        background-color: #f9f9f9db;
-        padding: 2rem 0
+        background-color: #fafafa;
+        padding: ;
     }
 
     ::-webkit-scrollbar-track {
