@@ -1,4 +1,7 @@
 @media screen and (max-width: 46.5625em) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
     footer>div,header>div,main {
         padding:0 .625rem .6rem;
         max-width: initial
@@ -120,7 +123,7 @@
     }
 
     header form>div {
-        padding: 1rem 0
+        padding: 4.6rem 0 1rem;
     }
 
     header form>div>div {
@@ -204,12 +207,18 @@
             background-color: #fff
         }
     }
+
+    header {
+        height: 6rem;
+        padding: 0;
+    }
+    header>div>form {
+        margin: -.3rem 0 0 1%;
+        padding: .4rem .3rem 1rem;
+    }
 }
 
 @media screen and (max-width: 1174px) {
-    header>div>form {
-        margin:-.09rem 0 0 1%
-    }
 
     section[related] {
         margin: 3rem 0 0

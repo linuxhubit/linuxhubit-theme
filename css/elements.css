@@ -19,18 +19,16 @@
     width: 6px
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
-
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration {
+    display: none
+}
 
 @keyframes blink {
     50% {
-        opacity: 0;
+        opacity: 0
     }
 }
-  
+
 button,fieldset,html,input,input[type=submit],select,textarea {
     font: normal 1rem/1.625rem Heebo,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
@@ -39,11 +37,14 @@ h1,h2,h3,h4,h5 {
     font-weight: 600
 }
 
-a {
+a,
+header,
+header>div>form,
+header>div>form>input[type=search] {
     transition: all .2s ease-in-out
 }
 
-footer>div, header>div, header>nav>ul, main {
+footer>div,header>div,header>nav>ul,main {
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 3.125rem
@@ -87,7 +88,7 @@ header>div>form {
     height: 1rem;
     overflow: hidden;
     padding: .4rem .3rem 1rem;
-    top: .6rem;
+    top: .8rem
 }
 
 button,fieldset,input,input[type=submit],select,textarea {
@@ -118,7 +119,7 @@ header>div>form>input[type=search] {
     border-radius: 3rem;
     letter-spacing: .04rem;
     font-weight: 600;
-    padding: .8rem 1.7rem;
+    padding: .8rem 2.6rem;
     position: relative;
     z-index: 1;
 }
@@ -145,10 +146,10 @@ main>div>article:first-child {
 }
 
 main {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 main>div>article>p {
@@ -196,9 +197,11 @@ main>aside>ul+span,main>div>article>h2+span+p+div+span {
 }
 
 header>div>form>.icon {
+    font-weight: 5;
     position: absolute;
-    margin: 1.1rem 0 0 .925rem;
-    left: 0
+    margin: 1.1rem 0 0 1.4rem;
+    left: 0;
+    z-index: 1;
 }
 
 main>div>article>a:last-child>.icon {
@@ -415,7 +418,9 @@ main>aside>ul>li>a {
 header {
     z-index: 1;
     position: relative;
-    padding: .4rem 0 .1rem
+    padding: .4rem 0 .1rem;
+    height: 5.2rem;
+    overflow: hidden;
 }
 
 article.isPage p {
@@ -520,14 +525,22 @@ main>div>ol:last-child>li a,main>div>ol:last-child>li a:hover {
 
 header form>div {
     position: fixed;
-    margin: .7rem 0 0 0;
     left: 0;
     right: 0;
+    top: 0;
     overflow-y: auto;
     display: none;
     height: 100%;
     text-align: center;
-    padding: 2rem 0 1rem;
+    padding: 6rem 0 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    transition: all .2s ease-in-out;
+}
+
+header form>div::-webkit-scrollbar,
+header form>div::-moz-scrollbar {
+    display: none;
 }
 
 header form>div article {
@@ -608,7 +621,7 @@ header form>section {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     width: calc(100% - 6.5rem);
-    scrollbar-width: none;
+    scrollbar-width: none
 }
 
 header form>section .tag {
@@ -617,25 +630,58 @@ header form>section .tag {
     font-size: 14px;
     background-position: 10px;
     display: inline-block;
-    margin: 0 .4rem 0 0;
+    margin: 0 .4rem 0 0
 }
 
-header>div>form>input[type=search].typing {
-    color: transparent;
+header.typing>div>form>input[type=search] {
+    color: transparent
 }
 
 header form>section::after {
     content: "|";
-    animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite
 }
 
 header form>div>div {
     max-width: 100rem;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 header form>div article h5 {
     font-weight: 500;
     line-height: 20px;
-    margin: .5rem 0;
+    margin: .5rem 0
+}
+
+header.typing>div>form>input[type=search]::selection {
+    background: 0 0;
+    color: transparent
+}
+
+header.typing>div>form>input[type=search]::-moz-selection {
+    background: 0 0;
+    color: transparent
+}
+
+
+
+header.typing>div>a,header.typing>div>ul {
+    display: none;
+}
+
+header.typing>div>form {
+    margin: -.7rem 0 0 0;
+    width: 100%;
+}
+
+header.typing>div>form>input {
+    max-width: initial;
+}
+
+header.typing+main {
+    display: none; 
+}
+
+header.typing>div>form>.icon {
+    display: none;
 }

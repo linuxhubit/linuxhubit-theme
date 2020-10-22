@@ -1,3 +1,4 @@
+/* https://git.mirko.pm/brombinmirko/httploader-js */
 let body = document.getElementsByTagName("body")[0];
 
 /* load data from other page */
@@ -11,20 +12,11 @@ function load(dom, url, source_dom=false)
             content = xml_http.responseText;
             if(source_dom)
             {
-                try
-                {
-                    document.getElementById("content_process").remove();
-                }
-                catch
-                {
-                    console.debug("No content process found.")
-                }
                 content_process = document.createElement("div"),
                 content_process.innerHTML = content,
                 content_process.id = "content_process",
                 content_process.style.display = "none",
-                body.appendChild(content_process),
-                content = document.querySelector("#content_process " + source_dom).outerHTML
+                content = content_process.querySelector(source_dom).outerHTML
             }
             dom.innerHTML = content;
         }

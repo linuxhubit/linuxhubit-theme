@@ -1,4 +1,5 @@
 search_field = document.querySelector("header input[type='search']"),
+search_form = document.querySelector("header form"),
 search_results = document.querySelector("header form > div"),
 tags_results = document.querySelector("header form > section"),
 search_result = document.querySelector("header form > div > div article"),
@@ -37,8 +38,8 @@ var taglist_tmp = [];
 
 function search() {
     search_field.value=search_field.value.toLowerCase();
-    if(!search_field.classList.contains("typing")) {
-        search_field.classList.add("typing")
+    if(!search_form.classList.contains("typing")) {
+        search_form.classList.add("typing")
     }
     window.scrollTo(0,0),
     tags_results.scrollTo(tags_results.scrollWidth - tags_results.clientWidth, 0);
@@ -77,6 +78,6 @@ window.addEventListener('mouseup', e => {
         taglist_tmp = [],
         body.style.overflow = "auto",
         search_field.value  = "",
-        search_field.classList.remove("typing");
+        search_form.classList.remove("typing");
     }
 });
