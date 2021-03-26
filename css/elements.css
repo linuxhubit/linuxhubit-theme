@@ -19,7 +19,10 @@
     width: 6px
 }
 
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
     display: none
 }
 
@@ -29,11 +32,21 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
     }
 }
 
-button,fieldset,html,input,input[type=submit],select,textarea {
-    font: normal 1rem/1.625rem Heebo,"Helvetica Neue",Helvetica,Arial,sans-serif
+button,
+fieldset,
+html,
+input,
+input[type=submit],
+select,
+textarea {
+    font: normal 1rem/1.625rem Heebo, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 600
 }
 
@@ -44,13 +57,19 @@ header>div>form>input[type=search] {
     transition: all .2s ease-in-out
 }
 
-footer>div,header>div,header>nav>ul,main {
+footer>div,
+header>div,
+header>nav>ul,
+main {
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 3.125rem
 }
 
-header>div>a,header>div>form,header>div>ul,section[related]>div article {
+header>div>a,
+header>div>form,
+header>div>ul,
+section[related]>div article {
     display: inline-table;
     vertical-align: middle
 }
@@ -60,16 +79,20 @@ header>div>ul {
     padding: 1.125rem 0
 }
 
-header>div>ul>li,header>nav>ul>li {
-    display: inline-table
+header>div>ul>li,
+header>nav>ul>li {
+    display: inline-table;
+    border-radius: 1rem;
 }
 
-header>div>ul>li>a,header>nav>ul>li.selected {
+header>div>ul>li>a,
+header>nav>ul>li.selected {
     border-radius: 1.25rem;
     font-weight: 500
 }
 
-footer>div>div>a>img,header>div>a>img {
+footer>div>div>a>img,
+header>div>a>img {
     height: 1.75rem;
     margin: .813rem 0;
     position: relative;
@@ -91,7 +114,12 @@ header>div>form {
     top: .8rem
 }
 
-button,fieldset,input,input[type=submit],select,textarea {
+button,
+fieldset,
+input,
+input[type=submit],
+select,
+textarea {
     border-radius: .313rem;
     border: 0;
     padding: .625rem .625rem .563rem;
@@ -115,21 +143,25 @@ header>div>form>input[type=search] {
     max-width: 26.25rem;
     transition: all .2s ease-in-out;
     padding: .5rem 2.125rem;
-    box-shadow: 0 10px 15px -3px rgba(78,85,105,.1),0 4px 6px -2px rgba(0,0,0,.05);
+    box-shadow: 0 10px 15px -3px rgba(78, 85, 105, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
     border-radius: 3rem;
     letter-spacing: .04rem;
     font-weight: 600;
     padding: .8rem 2.6rem;
     position: relative;
-    z-index: 1;
+    z-index: 1
 }
 
-header form>div article,main>div>article,main>div>article:first-child>div,main>div>ol:last-child>li a:hover,section[related]>div article {
+header form>div article,
+main>div>article,
+main>div>article:first-child>div,
+main>div>ol:last-child>li a:hover,
+section[related]>div article {
     border-radius: 1rem;
     padding: 3.125rem 3.125rem 5rem;
     max-width: 48.2%;
     margin: 0 .9% 3rem;
-    box-shadow: 0 25px 45px -12px rgba(110,118,128,.43);
+    box-shadow: 0 25px 45px -12px rgba(110, 118, 128, .43);
     width: 100%;
     position: relative;
     top: 0;
@@ -149,7 +181,7 @@ main {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 main>div>article>p {
@@ -183,7 +215,8 @@ main>div>article>a:last-child {
     font-size: 1.0625rem
 }
 
-main>aside>ul+span,main>div>article>h2+span+p+div+span {
+main>aside>ul+span,
+main>div>article>h2+span+p+div+span {
     position: absolute;
     font-size: .9375rem;
     opacity: .2;
@@ -201,7 +234,7 @@ header>div>form>.icon {
     position: absolute;
     margin: 1.1rem 0 0 1.4rem;
     left: 0;
-    z-index: 1;
+    z-index: 1
 }
 
 main>div>article>a:last-child>.icon {
@@ -236,7 +269,8 @@ footer li span {
     display: block
 }
 
-footer>div>div>a+small,footer>div>div>small {
+footer>div>div>a+small,
+footer>div>div>small {
     display: block;
     margin: 0 0 .3125rem;
     font-size: .75rem
@@ -251,7 +285,8 @@ footer>div>div {
     padding: 0 .6em
 }
 
-footer small+h3,footer ul+h3 {
+footer small+h3,
+footer ul+h3 {
     margin-top: 1.25rem
 }
 
@@ -283,7 +318,9 @@ main>article>div {
     margin: 1.5625rem 0
 }
 
-main>article>div ol>li,main>article>div p,main>article>div ul>li {
+main>article>div ol>li,
+main>article>div p,
+main>article>div ul>li {
     font-size: 1.1em;
     font-weight: 400;
     letter-spacing: .0531rem;
@@ -291,7 +328,9 @@ main>article>div ol>li,main>article>div p,main>article>div ul>li {
     margin: 0 0 1.5625rem
 }
 
-main>article>div h2,main>article>div h3,main>article>div h4 {
+main>article>div h2,
+main>article>div h3,
+main>article>div h4 {
     margin: 2.1875rem 0 1.5625rem
 }
 
@@ -319,7 +358,7 @@ main>article.hasSummary {
 
 main>article {
     padding: 0 1.875rem;
-    box-shadow: 0 25px 45px -12px rgba(110,118,128,.58);
+    box-shadow: 0 25px 45px -12px rgba(110, 118, 128, .58);
     border-radius: 5px
 }
 
@@ -352,7 +391,8 @@ main>aside>ul>li>a.H4::before {
     padding: .125rem .3125rem
 }
 
-blockquote,pre {
+blockquote,
+pre {
     padding: 1.875rem;
     font-size: 1.1rem;
     overflow: auto;
@@ -380,7 +420,8 @@ main>div>ol:last-child>li {
     padding: 0 .625rem 0 0
 }
 
-main>article>div ol,main>article>div ul {
+main>article>div ol,
+main>article>div ul {
     list-style: disc;
     margin: 0 0 1rem 1rem
 }
@@ -389,7 +430,10 @@ main>article>div a {
     border-bottom: .0625rem dashed
 }
 
-main>article>div ol>li,main>article>div ul>li,main>article>div ul>li p,main>article>div>blockquote>p {
+main>article>div ol>li,
+main>article>div ul>li,
+main>article>div ul>li p,
+main>article>div>blockquote>p {
     margin: 0
 }
 
@@ -420,7 +464,7 @@ header {
     position: relative;
     padding: .4rem 0 .1rem;
     height: 5.2rem;
-    overflow: hidden;
+    overflow: hidden
 }
 
 article.isPage p {
@@ -429,7 +473,10 @@ article.isPage p {
     margin: 1rem 0 0
 }
 
-article.isPage h2,article.isPage h3,article.isPage h4,article.isPage h5 {
+article.isPage h2,
+article.isPage h3,
+article.isPage h4,
+article.isPage h5 {
     margin: 2rem 0 1rem
 }
 
@@ -445,7 +492,8 @@ main>div>article:first-child>div:not(:nth-child(5)) {
     display: block
 }
 
-main>div>article>div>a,main>div>article>div>a>img {
+main>div>article>div>a,
+main>div>article>div>a>img {
     display: block
 }
 
@@ -461,7 +509,8 @@ main>div>article>div+h2+span+p+div {
     margin: 3rem 0 0
 }
 
-main>div>article,main>div>ol:last-child>li a:hover {
+main>div>article,
+main>div>ol:last-child>li a:hover {
     transition: all .2s ease-in-out
 }
 
@@ -483,14 +532,15 @@ main>div>article>div:not(:nth-child(5)) {
 }
 
 .hljs {
-    font-size: .9em;
-    box-shadow: 0 5px 10px -3px rgba(132,132,132,.12),0 3px 16px 2px rgba(116,134,162,.12),0 8px 12px 1px rgba(34,0,51,.04);
+    font-size: .95em;
+    box-shadow: 0 5px 10px -3px rgba(132, 132, 132, .12), 0 3px 16px 2px rgba(116, 134, 162, .12), 0 8px 12px 1px rgba(34, 0, 51, .04);
     border: 0;
     border-radius: .6rem;
-    padding: 1rem 2rem
+    padding: 1rem 2rem;
 }
 
-header>div>ul>li>a,main>aside>span {
+header>div>ul>li>a,
+main>aside>span {
     text-transform: uppercase;
     font-size: .8em
 }
@@ -500,8 +550,10 @@ main>aside>ul>li>a.active {
     font-weight: 500
 }
 
-header form>div article:hover,main>div>article:hover,section[related]>div article:hover {
-    box-shadow: .0625rem .325rem .45rem 0 rgba(0,0,0,.06);
+header form>div article:hover,
+main>div>article:hover,
+section[related]>div article:hover {
+    box-shadow: .0625rem .325rem .45rem 0 rgba(0, 0, 0, .06);
     top: -.1rem
 }
 
@@ -516,7 +568,8 @@ footer>div>div>a>img {
     top: -.3rem
 }
 
-main>div>ol:last-child>li a,main>div>ol:last-child>li a:hover {
+main>div>ol:last-child>li a,
+main>div>ol:last-child>li a:hover {
     max-width: initial;
     width: initial;
     padding: 0 .3rem;
@@ -535,12 +588,12 @@ header form>div {
     padding: 6rem 0 1rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
 }
 
-header form>div::-webkit-scrollbar,
-header form>div::-moz-scrollbar {
-    display: none;
+header form>div::-moz-scrollbar,
+header form>div::-webkit-scrollbar {
+    display: none
 }
 
 header form>div article {
@@ -549,10 +602,13 @@ header form>div article {
     display: inline-table;
     text-align: initial;
     padding: 2rem;
-    min-height: 12.3rem
+    min-height: 12.3rem;
+    position: relative;
+    overflow: hidden
 }
 
-header form>div article ul.uk-article-meta,section[related]>div article ul.uk-article-meta {
+header form>div article ul.uk-article-meta,
+section[related]>div article ul.uk-article-meta {
     display: none
 }
 
@@ -560,7 +616,8 @@ section[related]>div article h5 {
     display: none
 }
 
-header form>div article h1,section[related]>div article h1 {
+header form>div article h1,
+section[related]>div article h1 {
     line-height: 1.4em
 }
 
@@ -598,7 +655,7 @@ section[related]>div article {
 }
 
 section[related]>div>div {
-    display: flex;
+    /*! display:flex; */
     flex-wrap: wrap;
     justify-content: space-between
 }
@@ -630,7 +687,7 @@ header form>section .tag {
     font-size: 14px;
     background-position: 10px;
     display: inline-block;
-    margin: 0 .4rem 0 0
+    margin: 0 .4rem 0
 }
 
 header.typing>div>form>input[type=search] {
@@ -663,25 +720,85 @@ header.typing>div>form>input[type=search]::-moz-selection {
     color: transparent
 }
 
-
-
-header.typing>div>a,header.typing>div>ul {
-    display: none;
+header.typing>div>a,
+header.typing>div>ul {
+    display: none
 }
 
 header.typing>div>form {
     margin: -.7rem 0 0 0;
-    width: 100%;
+    width: 100%
 }
 
 header.typing>div>form>input {
-    max-width: initial;
+    max-width: initial
 }
 
 header.typing+main {
-    display: none; 
+    display: none
 }
 
 header.typing>div>form>.icon {
-    display: none;
+    display: none
+}
+
+header form>div article::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8em;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem
+}
+
+header form>div article:first-of-type::after,
+header form>div article:nth-of-type(2)::after,
+header form>div article:nth-of-type(3)::after {
+    padding: .18rem 2rem
+}
+
+header form>div article:first-of-type,
+header form>div article:nth-of-type(2),
+header form>div article:nth-of-type(3) {
+    padding-bottom: 3.5rem
+}
+
+header form>div article:first-of-type::after {
+    content: "Copertura 100%"
+}
+
+header form>div article:nth-of-type(2)::after {
+    content: "Copertura 50%"
+}
+
+header form>div article:nth-of-type(3)::after {
+    content: "Copertura 30%"
+}
+
+header form>div::after {
+    content: "La copertura in ricerca è sperimentale";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+    background-color: #dde2e6;
+    color: #53626d;
+    padding: .7rem 2rem;
+    max-width: 21rem;
+    border-radius: 11rem;
+    box-shadow: 0 10px 15px -3px rgb(112 119 132 / 10%), 0 4px 6px -2px rgba(0, 0, 0, .05)
+}
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article thead {
+    border-bottom: 1px solid;
 }
